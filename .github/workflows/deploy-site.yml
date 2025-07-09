@@ -1,0 +1,29 @@
+name: Deploy static files to site
+
+on:
+  workflow_dispatch:
+
+env:
+  AWS_REGION: us-west-2
+  BUCKET_NAME: seyva-static-site
+
+jobs:
+  push_files:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Configure AWS credentials
+        id: aws-creds
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-region: ${{ env.AWS_REGION }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key	: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Push changed static files to S3 bucket
+        id: s3-push
+        run: |
+          aws s3 sync site s3://seyva-static-site --size-only
