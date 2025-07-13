@@ -1,4 +1,9 @@
 locals {
-  bucket_name = "${var.project_name}-bucket"
+  project_name = "seyva"
+  name         = "SEyVA"
+  domain_name  = "seyva.com.mx"
+  tags = {
+    Environment = "Production"
+    Project     = "seyva"
+  }
 }
-

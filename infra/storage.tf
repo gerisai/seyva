@@ -1,13 +1,15 @@
 resource "aws_s3_bucket" "static_site" {
-  bucket = local.bucket_name
-  acl    = "public-read"
+  bucket = "${local.project_name}-static-site"
+}
 
-  website {
-    index_document = "index.html"
-    error_document = "error.html"
+resource "aws_s3_bucket_website_configuration" "website_config" {
+  bucket = aws_s3_bucket.static_site.id
+
+  index_document {
+    suffix = "index.html"
   }
 
-  tags = {
-    Name = local.bucket_name
+  error_document {
+    key = "error.html"
   }
 }
