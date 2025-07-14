@@ -3,14 +3,45 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+/* Main brand colors */
+  --color-brand-primary-green: #26AA26;
+  --color-brand-primary-orange: #FFA233;
+  --color-brand-primary-purple: #7031BA;
+  --color-brand-primary-pink: #EE0C9D;
+  --color-brand-primary-blue: #33A1DC;
+
+   /* Carousel Colors */
+  --color-carousel-spot:#7B61FF;
+  --color-carousel-gray: #C4C4C4;
+  --color-carousel-green: #3EF426;
+  --color-carousel-black: #0B0B0B;
+
+  /* Basic Colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-light-gray: #D9D9D9;
+  --color-light-purple: #8A38F5;
+
+/* Colors for different types of text */
+  --color-letter-white: #FDFDFE; 
+  --color-letter-gray: #3D3D3D;
+  --color-letter-phrase:#575757;
+  --color-letter-author: #A7A7A7;
+
+  /* Colors boxes */
+  --color-boxes-gray: #F3F3F3;
+  --color-boxes-light-gray: #F2F2F2;
+
+  /* Colors Sliders */
+  --color-slider-white: #E6E6E6;
+
+  /* Colors for buttons */
+  --color-button-blue: #33A1DC;
+  --color-button-white: #F3F3F3;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,5 +53,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto), var(--font-inter);
 }
