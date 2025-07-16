@@ -2,7 +2,7 @@
 
 import PropTypes from "prop-types"
 
-function Button ({ 
+export default function Button ({ 
   children,
   onClick,
   type = 'button',
@@ -36,5 +36,3 @@ Button.propTypes = {
   variant: PropTypes.oneOf(['primary']),
   disabled: PropTypes.bool
 }
-
-export default Button;

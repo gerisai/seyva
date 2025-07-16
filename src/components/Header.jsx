@@ -1,0 +1,23 @@
+"use client";
+
+import Button from "./Button"
+import Image from 'next/image'
+import PropTypes from "prop-types"
+
+export default function Header({ links }) {
+  return (
+    <header className="w-full flex items-center justify-between px-6 py-4 bg-white">
+      <Image src='/imagotipo.svg' width={250} height={250} />
+      <nav className="flex items-center space-x-8">
+        { links.map((link) => (
+          <a href={link.href} className="text-2xl text-black font-bold">{link.text}</a>
+        )) }
+        <Button variant="primary">Súmate</Button>
+      </nav>
+    </header>
+  )
+}
+
+Header.propTypes = {
+  links: PropTypes.arrayOf(PropTypes.object).isRequired
+}
