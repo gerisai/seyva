@@ -41,6 +41,38 @@
   --color-button-white: #F3F3F3;
 }
 
+/* Clases CSS para Fondos */
+.background-blue {
+  background-color: var(--color-brand-primary-blue);
+}
+.background-pink {
+  background-color: var(--color-brand-primary-pink);
+}
+/* Clases para el botón primary por defecto */
+.button-default-background-blue {
+  background-color: var(--color-brand-primary-blue); 
+}
+
+.button-default-border-blue {
+  border-color: var(--color-brand-primary-blue); 
+}
+
+/* Colores para las Cards o otros componentes: */
+.background-green {
+  background-color: var(--color-brand-primary-green);
+}
+
+.background-orange {
+  background-color: var(--color-brand-primary-orange);
+}
+
+.background-purple {
+  background-color: var(--color-brand-primary-purple);
+}
+
+.text-brand-green {
+  color: var(--color-brand-primary-green);
+}
 
 
 @media (prefers-color-scheme: dark) {
