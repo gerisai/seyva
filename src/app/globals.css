@@ -4,76 +4,78 @@
   --background: #ffffff;
   --foreground: #171717;
 
-/* Main brand colors */
-  --color-brand-primary-green: #26AA26;
-  --color-brand-primary-orange: #FFA233;
-  --color-brand-primary-purple: #7031BA;
-  --color-brand-primary-pink: #EE0C9D;
-  --color-brand-primary-blue: #33A1DC;
+  /* Main brand colors */
+  --brand-primary-green: #26AA26;
+  --brand-primary-orange: #FFA233;
+  --brand-primary-purple: #7031BA;
+  --brand-primary-pink: #EE0C9D;
+  --brand-primary-blue: #33A1DC;
 
    /* Carousel Colors */
-  --color-carousel-spot:#7B61FF;
-  --color-carousel-gray: #C4C4C4;
-  --color-carousel-green: #3EF426;
-  --color-carousel-black: #0B0B0B;
+  --carousel-spot:#7B61FF;
+  --carousel-gray: #C4C4C4;
+  --carousel-green: #3EF426;
+  --carousel-black: #0B0B0B;
 
   /* Basic Colors */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  --color-light-gray: #D9D9D9;
-  --color-light-purple: #8A38F5;
+  --white: #FFFFFF;
+  --black: #000000;
+  --light-gray: #D9D9D9;
+  --light-purple: #8A38F5;
 
-/* Colors for different types of text */
-  --color-letter-white: #FDFDFE; 
-  --color-letter-gray: #3D3D3D;
-  --color-letter-phrase:#575757;
-  --color-letter-author: #A7A7A7;
+  /* Colors for different types of text */
+  --text-white: #FDFDFE; 
+  --text-gray: #3D3D3D;
+  --text-phrase:#575757;
+  --text-author: #A7A7A7;
 
   /* Colors boxes */
-  --color-boxes-gray: #F3F3F3;
-  --color-boxes-light-gray: #F2F2F2;
+  --boxes-gray: #F3F3F3;
+  --boxes-light-gray: #F2F2F2;
 
   /* Colors Sliders */
-  --color-slider-white: #E6E6E6;
-
-  /* Colors for buttons */
-  --color-button-blue: #33A1DC;
-  --color-button-white: #F3F3F3;
+  --slider-white: #E6E6E6;
 }
 
-/* Clases CSS para Fondos */
-.background-blue {
-  background-color: var(--color-brand-primary-blue);
-}
-.background-pink {
-  background-color: var(--color-brand-primary-pink);
-}
-/* Clases para el botón primary por defecto */
-.button-default-background-blue {
-  background-color: var(--color-brand-primary-blue); 
+.bg-blue {
+  background-color: var(--brand-primary-blue);
 }
 
-.button-default-border-blue {
-  border-color: var(--color-brand-primary-blue); 
+.bg-pink {
+  background-color: var(--brand-primary-pink);
 }
 
-/* Colores para las Cards o otros componentes: */
-.background-green {
-  background-color: var(--color-brand-primary-green);
+.bg-green {
+  background-color: var(--brand-primary-green);
 }
 
-.background-orange {
-  background-color: var(--color-brand-primary-orange);
+.bg-purple {
+  background-color: var(--brand-primary-purple);
 }
 
-.background-purple {
-  background-color: var(--color-brand-primary-purple);
+.bg-orange {
+  background-color: var(--brand-primary-orange);
+}
+
+.bg-blue {
+  border-color: var(--brand-primary-blue); 
 }
 
 .text-brand-green {
-  color: var(--color-brand-primary-green);
+  color: var(--brand-primary-green);
 }
 
+.primary-button {
+  background-color: var(--brand-primary-blue);
+  border-color: var(--brand-primary-blue);
+  color: var(--text-white);
+}
+
+.primary-button:hover {
+  background-color: var(--white);
+  border-color: var(--brand-primary-blue);
+  color: var(--brand-primary-blue);
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

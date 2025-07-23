@@ -7,32 +7,18 @@ export default function Button ({
   children,
   onClick,
   type = 'button',
-  variant = 'primary',
   disabled = false,
-  additionalClasses,
-  customColorClass, // Variable nueva creada para el color
+  additionalClasses
 })
 {
-  // Clases base de la variante primaria (sin el color de fondo aquí)
-  const basePrimaryClasses = "text-white px-16 py-4 rounded-full text-lg";
-
-  const backgroundColorClass = customColorClass
-    ? customColorClass
-    : (variant === "primary" ? "button-default-background-blue" : ""); 
-
-  const borderColorClass = customColorClass
-    ? customColorClass.replace('bg-', 'border-') 
-    :  (variant === "primary" ? "button-default-border-blue" : ""); 
-
   return (
     <button
       className={`
-        flex items-center justify-center border-3 ${borderColorClass}
-        transition-colors duration-1000 ease-in-out
-        ${variant === "primary" ? basePrimaryClasses : ""} 
-        ${backgroundColorClass} 
-        ${ disabled && "cursor-not-allowed opacity-70" || "hover:bg-white hover:text-sky-500" }
-        ${additionalClasses || ''} 
+        text-white rounded-full text-lg
+        flex items-center justify-center
+        px-6 py-4 bg-sky-500
+        ${ disabled && "cursor-not-allowed opacity-70" }
+        ${additionalClasses || ''}
       `}
       onClick={onClick}
       type={type}
