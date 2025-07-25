@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Roboto, Inter } from 'next/font/google';
+import Footer from '../components/Footer';
+
 
 const roboto = Roboto({
   weight: ['400', '500', '600', '700', '900'], 
@@ -24,9 +26,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${inter.variable} antialiased`}
+        className={`${roboto.variable} ${inter.variable} antialiased flex flex-col min-h-screen`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
