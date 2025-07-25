@@ -9,7 +9,6 @@ const config = {
   "addons": [
     "@chromatic-com/storybook",
     "@storybook/addon-docs",
-    "@storybook/addon-onboarding",
     "@storybook/addon-a11y",
     "@storybook/addon-vitest"
   ],
@@ -18,7 +17,7 @@ const config = {
     "options": {}
   },
   "staticDirs": [
-    "../public"
+    "..\\public"
   ]
 };
 export default config;
