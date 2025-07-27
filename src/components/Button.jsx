@@ -33,8 +33,6 @@ Button.propTypes = {
   children: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.string,
-  variant: PropTypes.oneOf(['primary']),
   disabled: PropTypes.bool,
   additionalClasses: PropTypes.string,
-  customColorClass: PropTypes.string, 
 }

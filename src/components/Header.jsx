@@ -12,7 +12,9 @@ export default function Header({ links }) {
         { links.map((link) => (
           <a href={link.href} className="text-2xl text-black font-bold">{link.text}</a>
         )) }
-        <Button variant="primary">Súmate</Button>
+        <Button additionalClasses="border-3 primary-button transition-colors duration-900 ease-in-out !text-2xlpx-12 py-4">
+          Súmate
+        </Button>
       </nav>
     </header>
   )
