@@ -1,6 +1,6 @@
 import { fn } from 'storybook/test'
 
-import Button from '../components/Button.jsx'
+import Button from '@/components/Button.jsx'
 
 export default {
   title: 'Base/Button',
