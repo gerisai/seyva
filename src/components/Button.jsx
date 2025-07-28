@@ -1,12 +1,12 @@
+// src/components/Button.jsx
 "use client";
 
 import PropTypes from "prop-types"
 
-export default function Button ({ 
+export default function Button ({
   children,
   onClick,
   type = 'button',
-  variant = 'primary',
   disabled = false,
   additionalClasses
 })
@@ -14,11 +14,11 @@ export default function Button ({
   return (
     <button
       className={`
-        flex items-center justify-center border-3 border-sky-500
-        transition-colors duration-1000 ease-in-out 
-        ${ variant == "primary" && "bg-sky-500 text-white px-10 py-4 rounded-full text-2xl"}
-        ${ disabled && "cursor-not-allowed opacity-70" || "hover:bg-white hover:text-sky-500" }
-        ${additionalClasses}
+        text-white rounded-full text-lg
+        flex items-center justify-center
+        px-6 py-4 bg-sky-500
+        ${ disabled && "cursor-not-allowed opacity-70" }
+        ${additionalClasses || ''}
       `}
       onClick={onClick}
       type={type}
@@ -33,6 +33,6 @@ Button.propTypes = {
   children: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.string,
-  variant: PropTypes.oneOf(['primary']),
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  additionalClasses: PropTypes.string,
 }
