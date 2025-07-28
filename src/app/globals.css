@@ -61,10 +61,6 @@
   border-color: var(--brand-primary-blue); 
 }
 
-.text-brand-green {
-  color: var(--brand-primary-green);
-}
-
 .primary-button {
   background-color: var(--brand-primary-blue);
   border-color: var(--brand-primary-blue);
