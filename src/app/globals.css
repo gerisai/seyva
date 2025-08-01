@@ -52,6 +52,22 @@
   background-color: var(--brand-primary-green);
 }
 
+.text-green {
+  color: var(--brand-primary-green);
+}
+
+.text-orange {
+  color: var(--brand-primary-orange);
+}
+
+.text-purple {
+  color: var(--brand-primary-purple);
+}
+
+.text-pink {
+  color: var(--brand-primary-pink);
+}
+
 .bg-purple {
   background-color: var(--brand-primary-purple);
 }
