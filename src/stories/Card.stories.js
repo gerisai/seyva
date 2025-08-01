@@ -88,7 +88,7 @@ export const CentroDeAcopioCard = {
     description: (
     <div>
       <p className="text-3xl font-semibold mb-1">Taxco, Guerrero</p>
-      <p className="text-2xl leading-relaxed">Estamos organizando un pequeño acopio para recaudar fondos y seguir transfomrando vidas</p> 
+      <p className="text-2xl leading-relaxed">Estamos organizando un pequeño acopio para recaudar fondos y seguir transformando vidas</p> 
     </div>),
     buttonText: 'Súmate',
     cardClasses: 'bg-blue',
