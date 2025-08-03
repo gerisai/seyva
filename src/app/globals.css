@@ -40,6 +40,7 @@
 .bg-white {
   background-color: var(--background);
 }
+
 .bg-blue {
   background-color: var(--brand-primary-blue);
 }

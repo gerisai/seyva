@@ -9,16 +9,16 @@ export default function IndividualCard({
   title,
   date,
   buttonText,
-  buttonLink,
+  buttonLink = '#',
   lineClasses,
 }) {
   return (
-    <div className="w-[273px] rounded-2xl overflow-hidden bg-white">
+    <div className="w-fit size-fit rounded-2xl overflow-hidden">
       <div className="p-4">
         <div className="relative w-full h-64">
           <Image
             src={image}
-            alt="Tarjeta Individual"
+            alt={title}
             layout="fill"
             objectFit="cover"
             className="rounded-t-xl rounded-b-xl" 
@@ -28,7 +28,7 @@ export default function IndividualCard({
         <h2 className="text-lg font-bold text-black mb-2">{title}</h2>
         <div className="flex items-center justify-start gap-8">
           <div className={`h-2 w-34 ${lineClasses}`}></div>
-          <Link href={buttonLink || '#'}>
+          <Link href={buttonLink}>
             <span className="text-sm text-black font-medium hover:underline cursor-pointer">
               {buttonText}
             </span>
