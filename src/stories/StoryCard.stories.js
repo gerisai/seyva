@@ -19,23 +19,23 @@ export const StoryAlivioAlAlmaCard = {
     date: "Ciudad de México a 25 de marzo de 2025.",
     caseTitle:"Historia del Caso",
     caseDescription:"Adolfo es un joven Ingeniero Civil del Instituto Politécnico Nacional, el cual presenta el crecimiento de un abseso de grasa en el pectoral izquierdo asi como el crecimiento de dos absesos en la parte dorsal de su espalda, el cual ha ido creciendo y con ello sus complicaciones.",
-    supporDetails: (
+    supportDetails: (
     <>
       <div className="mb-4">
-        <p className="text-green font-semibold text-[40px] leading-[54.8px] mb-2">Solicitud</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Obtener apoyo para la cirugía para la remover los lipomas</p>
+        <p className="text-green font-semibold text-4xl mb-2">Solicitud</p>
+        <p className="text-black font-normal text-xl">Obtener apoyo para la cirugía para la remover los lipomas</p>
       </div>
       <div className="mb-4">
-        <p className="text-green font-semibold text-[40px] leading-[54.8px] mb-2">Cotización Quirurjica</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
+        <p className="text-green font-semibold text-4xl mb-2">Cotización Quirurjica</p>
+        <p className="text-black font-normal text-xl">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
       </div>
       <div className="mb-4">
-        <p className="text-green font-semibold text-[40px] leading-[54.8px] mb-2">Pago de la Operación</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Se liquidó en una sola exhibición</p>
+        <p className="text-green font-semibold text-4xl mb-2">Pago de la Operación</p>
+        <p className="text-black font-normal text-xl">Se liquidó en una sola exhibición</p>
       </div>
       <div className="mt-10">
-        <p className="text-green font-extrabold text-[76.42px] leading-[80.1px] mb-2">$48,000 MXN</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Suma total del apoyo</p>
+        <p className="text-green font-extrabold text-7xl mb-2">$48,000 MXN</p>
+        <p className="text-black font-normal text-xl">Suma total del apoyo</p>
       </div>
     </>
 ),
@@ -53,23 +53,23 @@ export const StorySueñosQueEstudianCard = {
     date: "Ciudad de México a 25 de marzo de 2025.",
     caseTitle:"Historia del Caso",
     caseDescription:"Adolfo es un joven Ingeniero Civil del Instituto Politécnico Nacional, el cual presenta el crecimiento de un abseso de grasa en el pectoral izquierdo asi como el crecimiento de dos absesos en la parte dorsal de su espalda, el cual ha ido creciendo y con ello sus complicaciones.",
-    supporDetails: (
+    supportDetails: (
     <>
       <div className="mb-4">
-        <p className="text-orange font-semibold text-[40px] leading-[54.8px] mb-2">Solicitud</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Obtener apoyo para la cirugía para la remover los lipomas</p>
+        <p className="text-orange font-semibold text-4xl  mb-2">Solicitud</p>
+        <p className="text-black font-normal text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
       </div>
       <div className="mb-4">
-        <p className="text-orange font-semibold text-[40px] leading-[54.8px] mb-2">Cotización Quirurjica</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
+        <p className="text-orange font-semibold text-4xl mb-2">Cotización Quirurjica</p>
+        <p className="text-black font-normal text-xl">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
       </div>
       <div className="mb-4">
-        <p className="text-orange font-semibold text-[40px] leading-[54.8px] mb-2">Pago de la Operación</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Se liquidó en una sola exhibición</p>
+        <p className="text-orange font-semibold text-4xl mb-2">Pago de la Operación</p>
+        <p className="text-black font-normal text-xl">Se liquidó en una sola exhibición</p>
       </div>
       <div className="mt-10">
-        <p className="text-orange font-extrabold text-[76.42px] leading-[80.1px] mb-2">$48,000 MXN</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Suma total del apoyo</p>
+        <p className="text-orange font-extrabold text-7xl mb-2">$48,000 MXN</p>
+        <p className="text-black font-normal text-xl">Suma total del apoyo</p>
       </div>
     </>
 ),
@@ -87,26 +87,27 @@ export const StoryUntechoConEsperanzaCard = {
     date: "Ciudad de México a 25 de marzo de 2025.",
     caseTitle:"Historia del Caso",
     caseDescription:"Adolfo es un joven Ingeniero Civil del Instituto Politécnico Nacional, el cual presenta el crecimiento de un abseso de grasa en el pectoral izquierdo asi como el crecimiento de dos absesos en la parte dorsal de su espalda, el cual ha ido creciendo y con ello sus complicaciones.",
-    supporDetails: (
+    supportDetails: (
     <>
       <div className="mb-10">
-        <p className="text-purple font-semibold text-[40px] leading-[54.8px] mb-2">Solicitud</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Obtener apoyo para la cirugía para la remover los lipomas</p>
+        <p className="text-purple font-semibold text-4xl mb-2">Solicitud</p>
+        <p className="text-black font-normal text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
       </div>
       <div className="mb-10">
-        <p className="text-purple font-semibold text-[40px] leading-[54.8px] mb-2">Renovación de espacios en la vivienda</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Se realizaron trabajos de obra en el hogar, en techo y piso.</p>
+        <p className="text-purple font-semibold text-4xl mb-2">Renovación de espacios en la vivienda</p>
+        <p className="text-black font-normal text-xl ">Se realizaron trabajos de obra en el hogar, en techo y piso.</p>
       </div>
       <div className="px-10">
-        <p className="text-purple font-semibold text-[40px] leading-[54.8px] mb-8">Testimonio</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px] text-center">
+        <p className="text-purple font-semibold text-4xl mb-8">Testimonio</p>
+        <p className="text-black font-normal text-xl text-center">
             “Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
             se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
             la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
             y un piso firme. Ya no tenemos miedo cuando llueve. Dormimos tranquilos.<br />
-            Nos devolvieron la paz en nuestra casa"</p>
-            </div>
-            </>
+            Nos devolvieron la paz en nuestra casa"
+        </p>
+      </div>
+      </>
 ),
     buttonText: 'Conoce todo el caso',
     themeColorClass: 'bg-purple',
@@ -122,23 +123,23 @@ export const StoryPanParaHoyYMañanaCard = {
     date: "Ciudad de México a 25 de marzo de 2025.",
     caseTitle:"Historia del Caso",
     caseDescription:"Adolfo es un joven Ingeniero Civil del Instituto Politécnico Nacional, el cual presenta el crecimiento de un abseso de grasa en el pectoral izquierdo asi como el crecimiento de dos absesos en la parte dorsal de su espalda, el cual ha ido creciendo y con ello sus complicaciones.",
-    supporDetails: (
+    supportDetails: (
     <>
       <div className="mb-4">
-        <p className="text-pink font-semibold text-[40px] leading-[54.8px] mb-2">Solicitud</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Obtener apoyo para la cirugía para la remover los lipomas</p>
+        <p className="text-pink font-semibold text-4xl mb-2">Solicitud</p>
+        <p className="text-black font-normal text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
       </div>
       <div className="mb-4">
-        <p className="text-pink font-semibold text-[40px] leading-[54.8px] mb-2">Cotización Quirurjica</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
+        <p className="text-pink font-semibold text-4xl mb-2">Cotización Quirurjica</p>
+        <p className="text-black font-normal text-xl ">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
       </div>
       <div className="mb-4">
-        <p className="text-pink font-semibold text-[40px] leading-[54.8px] mb-2">Pago de la Operación</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Se liquidó en una sola exhibición</p>
+        <p className="text-pink font-semibold text-4xl mb-2">Pago de la Operación</p>
+        <p className="text-black font-normal text-xl ">Se liquidó en una sola exhibición</p>
       </div>
       <div className="mt-10">
-        <p className="text-pink font-extrabold text-[76.42px] leading-[80.1px] mb-2">$48,000 MXN</p>
-        <p className="text-black font-normal text-[19.29px] leading-[25.7px]">Suma total del apoyo</p>
+        <p className="text-pink font-extrabold text-7xl mb-2">$48,000 MXN</p>
+        <p className="text-black font-normal text-xl ">Suma total del apoyo</p>
       </div>
     </>
 ),
