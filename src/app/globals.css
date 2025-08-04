@@ -37,6 +37,10 @@
   --slider-white: #E6E6E6;
 }
 
+.bg-white {
+  background-color: var(--background);
+}
+
 .bg-blue {
   background-color: var(--brand-primary-blue);
 }
@@ -47,6 +51,22 @@
 
 .bg-green {
   background-color: var(--brand-primary-green);
+}
+
+.text-green {
+  color: var(--brand-primary-green);
+}
+
+.text-orange {
+  color: var(--brand-primary-orange);
+}
+
+.text-purple {
+  color: var(--brand-primary-purple);
+}
+
+.text-pink {
+  color: var(--brand-primary-pink);
 }
 
 .bg-purple {
