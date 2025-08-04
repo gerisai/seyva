@@ -19,7 +19,7 @@ export const VidaSanaCard = {
     description: "Objetivo: Brindar atención médica integral y gratuita a personas con enfermedades crónicas en comunidades vulnerables.",
     lineClasses: 'bg-green', 
     buttonText: 'Leer más',
-    buttonClasses: 'bg-green w-[132px] h-[52px] rounded-[26px] flex items-center justify-center'
+    buttonClasses: 'bg-green'
   },
 };
 
@@ -30,7 +30,7 @@ export const PuertasAbiertasCard = {
     description: "Garantizar el acceso a la educación secundaria y superior para jóvenes en situación de pobreza.",
     lineClasses: 'bg-orange', 
     buttonText: 'Leer más',
-    buttonClasses: 'bg-orange w-[132px] h-[52px] rounded-[26px] flex items-center justify-center'
+    buttonClasses: 'bg-orange'
   },
 };
 
@@ -41,7 +41,7 @@ export const TechoFirmeCard = {
     description: "Mejorar las condiciones de vivienda de familias en zonas marginadas.",
     lineClasses: 'bg-purple', 
     buttonText: 'Leer más',
-    buttonClasses: 'bg-purple w-[132px] h-[52px] rounded-[26px] flex items-center justify-center'
+    buttonClasses: 'bg-purple'
   },
 };
 
@@ -52,6 +52,6 @@ export const MesaLlenaCard = {
     description: "Combatir la desnutrición infantil y la inseguridad alimentaria en comunidades rurales.",
     lineClasses: 'bg-pink', 
     buttonText: 'Leer más',
-    buttonClasses: 'bg-pink w-[132px] h-[52px] rounded-[26px] flex items-center justify-center'
+    buttonClasses: 'bg-pink'
   },
 };

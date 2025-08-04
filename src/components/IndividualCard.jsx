@@ -26,8 +26,8 @@ export default function IndividualCard({
         </div>
         <p className="text-sm text-gray-600 mb-2 mt-4">{date}</p> 
         <h2 className="text-lg font-bold text-black mb-2">{title}</h2>
-        <div className="flex items-center justify-start gap-8">
-          <div className={`h-2 w-34 ${lineClasses}`}></div>
+        <div className="flex items-center justify-start gap-12">
+          <div className={`h-2 w-6/10 ${lineClasses}`}></div>
           <Link href={buttonLink}>
             <span className="text-sm text-black font-medium hover:underline cursor-pointer">
               {buttonText}

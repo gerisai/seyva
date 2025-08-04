@@ -14,24 +14,24 @@ export default function IndividualCard({
   buttonClick,
 }) {
   return (
-    <div className="w-[508px] rounded-2xl overflow-hidden bg-white">
-      <div className="relative w-full h-[360px]">
+    <div className="w-1/2 rounded-2xl">
+      <div className="relative w-full h-64">
         <Image
           src={image}
-          alt="Tarjeta de Programas"
+          alt={title}
           layout="fill"
           objectFit="cover"
           className="rounded-t-xl rounded-b-xl"
         />
       </div>
-      <div className="px-0 py-5 text-left">
+      <div className="py-5 text-left">
         <h2 className="text-3xl font-semibold text-black">{title}</h2>
-        <p className="mt-1 font-normal text-xl leading-[25.7px] text-gray-700">{description}</p>
-        <div className="flex items-center justify-between mt-6"> 
-          <div className={`h-[9px] w-[340px] rounded-full ${lineClasses}`} /> 
+        <p className="mt-1 font-normal text-xl text-gray-700">{description}</p>
+        <div className="flex items-center justify-between mt-6 gap-6"> 
+          <div className={`h-2 w-3/4 rounded-full ${lineClasses}`} /> 
           <Button
             onClick={buttonClick}
-            additionalClasses={`text-white ${buttonClasses}`}>
+            additionalClasses={`text-white text-nowrap rounded-full flex items-center justify-center ${buttonClasses}`}>
             {buttonText}
           </Button>
         </div>
