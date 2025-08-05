@@ -46,7 +46,7 @@ export const StoryAlivioAlAlmaCard = {
     }
 };
 
-export const StorySueñosQueEstudianCard = {
+export const StorySuenosQueEstudianCard = {
     args: {
     image: `${baseAssetsUrl}/story-orange.png`,
     header: "Sueños que estudian",
@@ -100,11 +100,11 @@ export const StoryUntechoConEsperanzaCard = {
       <div className="px-10">
         <p className="text-purple font-semibold text-4xl mb-8">Testimonio</p>
         <p className="text-black font-normal text-xl text-center">
-            “Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
-            se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
-            la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
-            y un piso firme. Ya no tenemos miedo cuando llueve. Dormimos tranquilos.<br />
-            Nos devolvieron la paz en nuestra casa"
+          &quot;Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
+          se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
+          la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
+          y un piso firme. Ya no tenemos miedo cuando llueve. Dormimos tranquilos.<br />
+          Nos devolvieron la paz en nuestra casa&quot;
         </p>
       </div>
       </>
@@ -116,7 +116,7 @@ export const StoryUntechoConEsperanzaCard = {
     }
 };
 
-export const StoryPanParaHoyYMañanaCard = {
+export const StoryPanParaHoyYMananaCard = {
     args: {
     image: `${baseAssetsUrl}/story-pink.png`,
     header: "Pan para Hoy y Mañana",
