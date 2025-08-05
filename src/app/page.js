@@ -2,6 +2,7 @@
 "use client"; 
 
 import React from 'react';
+import Image from 'next/image'
 
 export default function Home() {
 
@@ -11,6 +12,7 @@ export default function Home() {
       <p className="text-lg text-center max-w-xl mb-8">
         Sitio en construcción. Aquí encontrarás próximamente información sobre nuestros proyectos, misión y formas de participar.
       </p>
+      <Image alt='seyva-logo'src='/imagotipo.svg' width={250} height={250} />
     </main>
   );
 }

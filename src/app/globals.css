@@ -95,15 +95,15 @@
 
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) { // TODO: This page is not yet ready to handle dark mode
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
+  /* background: var(--background); */
   color: var(--foreground);
   font-family: var(--font-roboto), var(--font-inter);
 }

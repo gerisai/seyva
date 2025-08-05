@@ -23,7 +23,17 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key	: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      
+      - name: Generate static build
+        run: |
+          npm install
+          npm run build
+
       - name: Push changed static files to S3 bucket
         id: s3-push
         run: |
-          aws s3 sync site s3://seyva-static-site --size-only
+          aws s3 sync dist s3://seyva-static-site --size-only
