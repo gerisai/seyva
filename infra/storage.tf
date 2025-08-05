@@ -2,16 +2,16 @@ resource "aws_s3_bucket" "static_site" {
   bucket = "${local.project_name}-static-site"
 }
 
-resource "aws_s3_bucket_website_configuration" "website_config" {
+resource "aws_s3_bucket_ownership_controls" "static_site_bucket_owner" {
   bucket = aws_s3_bucket.static_site.id
-
-  index_document {
-    suffix = "index.html"
+  rule {
+    object_ownership = "BucketOwnerPreferred"
   }
+}
 
-  error_document {
-    key = "error.html"
-  }
+resource "aws_s3_bucket_policy" "static_site_cf_access" {
+  bucket = aws_s3_bucket.static_site.id
+  policy = data.aws_iam_policy_document.cf_bucket_policy.json
 }
 
 resource "aws_s3_bucket" "media_assets" {
