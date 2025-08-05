@@ -1,6 +1,4 @@
 import PublicFileCard from '@/components/PublicFileCard';
-import { baseAssetsUrl } from '@/util/constants';
-import { fn } from 'storybook/test';
 
 const educationItems = [
     // Education
@@ -114,8 +112,8 @@ export const EducationCard = {
   args:{
     title:'Educación',
     icon:"/white_health.svg",
-    items:educationItems,
-    cardClasses:'bg-orange',
+    items: educationItems,
+    color:'orange',
   },
 };
 
@@ -124,7 +122,7 @@ export const HealthCard = {
     title: 'Salud',
     icon: '/white_health.svg',
     items: healthItems,
-    cardClasses: 'bg-green',
+    color: 'green',
   },
 };
 
@@ -133,7 +131,7 @@ export const FoodCard = {
     title:'Alimentación',
     icon:"/white_health.svg",
     items:foodItems,
-    cardClasses:'bg-pink',
+    color:'pink',
   },
 };
 
@@ -142,6 +140,6 @@ export const HousingCard = {
     title: 'Vivienda',
     icon: "/white_health.svg",
     items: housingItems,
-    cardClasses: 'bg-purple',
+    color: 'purple',
   },
 };
