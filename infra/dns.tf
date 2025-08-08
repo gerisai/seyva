@@ -44,3 +44,13 @@ resource "aws_route53_record" "cf_record" {
     evaluate_target_health = true
   }
 }
+
+resource "aws_route53_record" "mail_records" {
+  for_each = local.mail_records
+  zone_id  = aws_route53_zone.primary.zone_id
+  name     = each.value.name
+  type     = each.value.type
+  ttl      = each.value.ttl
+  records  = each.value.records
+}
+
