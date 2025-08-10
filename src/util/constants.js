@@ -48,3 +48,9 @@ export const imageSlides = [
     link: "#"
   }
 ];
+export const headerWords = [
+  { text: 'Salud', color: 'green'},
+  { text: 'Educación', color: 'orange'},
+  { text: 'Vivienda', color: 'purple'},
+  { text: 'Alimentación', color: 'pink'}
+]
