@@ -19,13 +19,11 @@ export const AlivioAlAlmaCard = {
     title: 'Alivio al Alma',
     description: (
     <div>
-      <p className="text-3xl font-semibold mb-1">Apoyo total</p>
-      <p className="text-6xl font-bold mb-4">$48,000 MXN</p>
-      <p className="text-2xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p>
+      <p className="text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p>
     </div>),
     buttonText: 'Conoce más',
     cardClasses: 'bg-green',
-    buttonClasses: 'bg-green !text-3xl px-10 py-4'
+    buttonClasses: 'bg-green !text-3xl'
   },
 };
 
@@ -36,13 +34,11 @@ export const SuenosQueEstudianCard = {
     title: 'Sueños que Estudian',
     description: (
     <div>
-      <p className="text-3xl font-semibold mb-1">Apoyo total</p>
-      <p className="text-6xl font-bold mb-4">$19,000 MXN</p>
-      <p className="text-2xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
+      <p className="text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
     </div>),
     buttonText: 'Conoce más',
     cardClasses: 'bg-orange',
-    buttonClasses: 'bg-orange !text-3xl px-10 py-4'
+    buttonClasses: 'bg-orange !text-3xl'
   },
 };
 
@@ -53,13 +49,11 @@ export const UnTechoConEsperanzaCard = {
     title: 'Un Techo con Esperanza',
     description: (
     <div>
-      <p className="text-3xl font-semibold mb-1">Apoyo total</p>
-      <p className="text-6xl font-bold mb-4">$29,000 MXN</p>
-      <p className="text-2xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
+      <p className="text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
     </div>),
     buttonText: 'Conoce más',
     cardClasses: 'bg-purple',
-    buttonClasses: 'bg-purple !text-3xl px-10 py-4'
+    buttonClasses: 'bg-purple !text-3xl'
   },
 };
 
@@ -70,13 +64,11 @@ export const PanParaHoyYMañanaCard = {
     title: 'Pan para Hoy y Mañana',
     description: (
     <div>
-      <p className="text-3xl font-semibold mb-1">Apoyo total</p>
-      <p className="text-6xl font-bold mb-4">$29,000 MXN</p>
-      <p className="text-2xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
+      <p className="text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
     </div>),
     buttonText: 'Conoce más',
     cardClasses: 'bg-pink',
-    buttonClasses: 'bg-pink !text-3xl px-10 py-4'
+    buttonClasses: 'bg-pink !text-3xl'
   },
 };
 
@@ -88,7 +80,7 @@ export const CentroDeAcopioCard = {
     description: (
     <div>
       <p className="text-3xl font-semibold mb-1">Taxco, Guerrero</p>
-      <p className="text-2xl leading-relaxed">Estamos organizando un pequeño acopio para recaudar fondos y seguir transformando vidas</p> 
+      <p className="text-xl leading-relaxed">Estamos organizando un pequeño acopio para recaudar fondos y seguir transformando vidas</p> 
     </div>),
     buttonText: 'Súmate',
     cardClasses: 'bg-blue',
