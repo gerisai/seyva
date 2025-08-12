@@ -1,8 +1,8 @@
-import LogoRibbon from '@/components/LogoRibbon'
+import Statistics from '@/components/Statistics'
 
 export default {
-  title: 'Components/LogoRibbon',
-  component: LogoRibbon,
+  title: 'Components/Statistics',
+  component: Statistics,
   parameters: {
     layout: 'centered',
   },

@@ -9,7 +9,7 @@ export const socialMedia = [
   {
     name: 'Facebook',
     icon: '/icons/SEYVA_ICONS_IG.svg',
-    link: 'https://www.youtube.com/@fseyva_mx',
+    link: 'https://www.facebook.com/fseyva.mx',
     size: 36
   },
   {

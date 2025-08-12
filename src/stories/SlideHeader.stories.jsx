@@ -2,7 +2,7 @@ import SlideHeader from '@/components/SlideHeader'
 import { headerWords } from '@/util/constants';
 
 export default {
-  title: 'Compound/SlideHeader',
+  title: 'Components/SlideHeader',
   component: SlideHeader,
   parameters: {
     layout: 'centered',

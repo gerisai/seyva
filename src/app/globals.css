@@ -53,6 +53,10 @@
   background-color: var(--brand-primary-green);
 }
 
+.text-blue {
+  color: var(--brand-primary-blue);
+}
+
 .text-green {
   color: var(--brand-primary-green);
 }
