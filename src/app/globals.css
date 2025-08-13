@@ -41,6 +41,14 @@
   background-color: var(--background);
 }
 
+.text-gray {
+  color: var(--text-phrase);
+}
+
+.text-lightGray {
+  color: var(--text-author);
+}
+
 .bg-blue {
   background-color: var(--brand-primary-blue);
 }
@@ -96,8 +104,6 @@
   border-color: var(--brand-primary-blue);
   color: var(--brand-primary-blue);
 }
-
-
 
 /* @media (prefers-color-scheme: dark) { // TODO: This page is not yet ready to handle dark mode
   :root {
