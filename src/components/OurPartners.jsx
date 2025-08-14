@@ -12,7 +12,7 @@ export default function OurPartners() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center p-8">
+    <div className="w-full flex flex-col items-center p-8">
       <div className="w-full bg-light-gray py-4 text-center">
         <h2 className="font-bold text-4xl text-gray">Nuestros socios</h2>
       </div>

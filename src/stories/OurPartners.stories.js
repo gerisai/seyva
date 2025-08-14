@@ -3,11 +3,11 @@ import OurPartners from '@/components/OurPartners';
 export default {
   title: 'Components/OurPartners',
   component: OurPartners,
-    parameters: {
+  parameters: {
     layout: 'fullscreen',
   },
 };
 
-export const Default = {
+export const Main = {
   args: {},
 };
