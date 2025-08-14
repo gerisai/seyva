@@ -85,6 +85,14 @@
   border-color: var(--brand-primary-blue); 
 }
 
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
 .primary-button {
   background-color: var(--brand-primary-blue);
   border-color: var(--brand-primary-blue);
