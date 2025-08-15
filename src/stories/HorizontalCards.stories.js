@@ -1,9 +1,9 @@
-import HorizontalCards from '@/components/HorizontalCards';
+import HorizontalCard from '@/components/HorizontalCard';
 import { baseAssetsUrl } from '@/util/constants';
 
 export default {
-  title: 'Components/HorizontalCards',
-  component: HorizontalCards,
+  title: 'Components/HorizontalCard',
+  component: HorizontalCard,
   parameters: {
     layout: 'centered',
   },

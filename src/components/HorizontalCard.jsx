@@ -40,4 +40,3 @@ HorizontalCards.propTypes = {
   colorClass: PropTypes.string.isRequired,
   reverseLayout: PropTypes.bool,
 };
-
