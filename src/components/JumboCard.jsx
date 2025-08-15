@@ -15,7 +15,7 @@ export default function JumboCard({
   cardClasses,
 }) {
   return (
-    <div className={`h-160 flex rounded-4xl overflow-hidden mx-auto w-4xl ${cardClasses}`}>
+    <div className={`h-160 flex rounded-4xl overflow-hidden ${cardClasses}`}>
       <div className={`w-1/2 p-8 flex flex-col justify-between text-white`}> 
         { icon && (
           <Image
