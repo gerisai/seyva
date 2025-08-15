@@ -10,7 +10,7 @@ export default function Paragraph({ title, content }) {
   );
 }
 
-Paragraph.protoTypes = {
+Paragraph.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
 }

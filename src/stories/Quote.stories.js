@@ -10,5 +10,13 @@ export default {
 };
 
 export const Main = {
-  args: {}
+  args: {
+    quote:(
+        <>
+        La superación de la pobreza no es un<br />
+        gesto de caridad, es un acto de justicia.     
+        </>
+    ),
+    author:"Nelson Mandela"
+  }
 };
