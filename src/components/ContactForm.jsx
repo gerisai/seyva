@@ -3,8 +3,8 @@ import Button from "./Button";
 
 export default function ContactForm({ fields }) {
   return (
-    <div className="bg-white rounded-4xl shadow-lg w-full max-w-md bg-gray">
-      <div className="bg-blue text-white text-center py-2 text-2xl rounded-t-4xl font-semibold">
+    <div className="bg-white rounded-4xl shadow-lg w-3/4 bg-gray">
+      <div className="bg-blue text-white text-center py-4 text-5xl rounded-t-4xl font-bold">
         Formulario
       </div>
       {/* Logo */}
@@ -13,8 +13,8 @@ export default function ContactForm({ fields }) {
           <Image
             src="/imagotipo.svg"
             alt="Imagotipo"
-            width={180}
-            height={160}
+            width={360}
+            height={200}
             priority
           />
         </div>
@@ -25,30 +25,30 @@ export default function ContactForm({ fields }) {
           { fields.map((field,index) => 
             ( field.type !== 'select' ?
             <div key={index}>
-              <label className={`block text-sm font-medium text-gray mb-1 ${field.required && 'required-label'}`}>
+              <label className={`block text-2xl font-medium text-gray mb-1 ${field.required && 'required-label'}`}>
                 {field.label}
               </label>
               { field.type !== 'textarea' ? 
                 <input
                   type={field.type}
-                  className="w-full border border-gray-300 rounded-2xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                  className="w-full border border-gray-300 rounded-2xl px-3 py-2 text-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue"
                   placeholder={field.placeholder}
                 />
                 :
                 <textarea 
-                  className="w-full border border-gray-300 rounded-2xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                  className="w-full border border-gray-300 rounded-2xl px-3 py-2 text-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue"
                   placeholder={field.placeholder}
                   rows={5}
                 />
               }
             </div>
             : 
-            <div>
-            <label className={`block text-sm font-medium text-gray mb-1 ${field.required && 'required-label'}`}>
+            <div key={index}>
+            <label className={`block text-2xl font-medium text-gray mb-1 ${field.required && 'required-label'}`}>
               {field.label}
             </label>
             <select
-              className="bg-gray w-full border border-gray-300 rounded-2xl px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-blue"
+              className="bg-gray w-full border border-gray-300 rounded-2xl px-3 py-2 text-2xl bg-white focus:outline-none focus:ring-2 focus:ring-brand-blue"
               defaultValue={field.default}
             >
               <option value="" disabled>
@@ -66,9 +66,9 @@ export default function ContactForm({ fields }) {
             <input
               id="privacy"
               type="checkbox"
-              className="h-4 w-4 mt-[2px] text-blue-600 border-gray-300 rounded focus:ring-brand-blue"
+              className="h-4 w-4 mt-[8px] text-blue font-bold border-gray-300 rounded focus:ring-brand-blue"
             />
-            <label htmlFor="privacy" className="ml-2 text-sm">
+            <label htmlFor="privacy" className="ml-2 text-2xl">
               He leído y acepto el{" "}
               <a
                 href="#" // TODO: change for actual privacy notice link
@@ -80,23 +80,24 @@ export default function ContactForm({ fields }) {
             </label>
           </div>
           
-          <p className="text-red-500 text-[0.5em] mb-2">*Esto es un campo obligatorio</p>
+          <p className="text-red-500 text-xl mb-2">*Esto es un campo obligatorio</p>
 
           <div className="flex flex-col items-center">
-            <p className="text-[0.5em] mb-2">
+            <p className="text-sm mb-2">
               La información proporcionada será utilizada 
               exclusivamente para fines relacionados con el trabajo 
               de la fundación: seguimiento de solicitudes, contacto directo
               y planeación de apoyos. Nos comprometemos a proteger tu privacidad y 
               no compartiremos tus datos con terceros.
             </p>
-            <p className="font-bold text-blue text-xs">Tu historia nos importa, y juntos podemos hacer la diferencia.</p>
+            <p className="font-bold text-blue text-xl">Tu historia nos importa, y juntos podemos hacer la diferencia.</p>
             <Button 
               additionalClasses="
                 primary-button mt-6
-                border-3 transition-colors 
-                duration-900 ease-in-out !text-xl
-                !py-2 w-1/2
+                border-3 transition-colors
+                font-bold
+                duration-900 ease-in-out !text-3xl
+                !py-2 w-1/3
               "
               type="submit"
             >

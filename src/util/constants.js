@@ -1,9 +1,9 @@
 export const baseAssetsUrl = 'https://seyva-media-assets.s3.us-west-2.amazonaws.com'
 export const headerLinks = [
-  { text: 'Inicio', href: '#' },
-  { text: 'Experiencias', href: '#' },
-  { text: 'Conócenos', href: '#' },
-  { text: 'Programas', href: '#' }
+  { text: 'Inicio', href: '/' },
+  { text: 'Experiencias', href: '/experiences' },
+  { text: 'Conócenos', href: '/knowus' },
+  { text: 'Programas', href: '/programs' }
 ]
 export const socialMedia = [
   {
@@ -125,7 +125,7 @@ export const jumboSlides = [
 ]
 export const contactFormFields = [
   {
-    label: 'Nombre',
+    label: 'Nombre completo',
     placeholder: 'Escribe tu nombre',
     type: 'text',
     required: true,

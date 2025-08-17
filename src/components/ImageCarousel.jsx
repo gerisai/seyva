@@ -27,7 +27,7 @@ export default function ImageCarousel({ slides, intervalTime = 3000 }) {
   }, [slides.length, intervalTime])
 
   return (
-    <div className="w-full h-114 relative">
+    <div className="w-full h-126 relative">
       {/* Slides */}
       { slides.map((slide, index) => (
         <div
