@@ -2,10 +2,10 @@ export default function Statistics({ helped = 2759 }) {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 className="text-9xl font-bold text-blue counter">+</h1>
-      <h1 className="text-5xl font-bold text-gray-700">Beneficiados</h1>
+      <h1 className="text-[12em] font-bold text-blue counter leading-none">+</h1>
+      <h1 className="text-6xl font-bold text-gray-700">Beneficiados</h1>
 
-      <style jsx>{`
+      <style>{`
         @property --num {
           syntax: '<integer>';
           initial-value: ${helped};

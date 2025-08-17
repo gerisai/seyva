@@ -1,24 +1,25 @@
 "use client";
+import { Fragment } from 'react';
 
 export default function SlideHeader({ words, intervalTime = 3 }) {
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1 className="text-4xl md:text-6xl font-bold flex gap-3">
+    <div className="flex">
+      <h1 className="text-gray text-8xl font-bold flex gap-3">
         Vivir es
         <span className="relative h-[1em] overflow-hidden inline-block">
           <span className="animate-slide block">
-            { words.map((word) => (
-              <>
+            { words.map((word,index) => (
+              <Fragment key={index}>
               <span className={`text-${word.color}`}>{word.text}</span>
               <br />
-              </>
+              </Fragment>
             ))}
           </span>
         </span>
       </h1>
 
-      <style jsx>{`
+      <style>{`
         @keyframes slide {
           0% {
             transform: translateY(0);

@@ -1,9 +1,9 @@
 export const baseAssetsUrl = 'https://seyva-media-assets.s3.us-west-2.amazonaws.com'
 export const headerLinks = [
-  { text: 'Inicio', href: '#' },
-  { text: 'Experiencias', href: '#' },
-  { text: 'Conócenos', href: '#' },
-  { text: 'Programas', href: '#' }
+  { text: 'Inicio', href: '/' },
+  { text: 'Experiencias', href: '/experiences' },
+  { text: 'Conócenos', href: '/knowus' },
+  { text: 'Programas', href: '/programs' }
 ]
 export const socialMedia = [
   {
@@ -125,7 +125,7 @@ export const jumboSlides = [
 ]
 export const contactFormFields = [
   {
-    label: 'Nombre',
+    label: 'Nombre completo',
     placeholder: 'Escribe tu nombre',
     type: 'text',
     required: true,
@@ -164,5 +164,35 @@ export const contactFormFields = [
     label: 'Breve descripción de su sitación o motivación',
     placeholder: 'Historia...',
     type: 'textarea'
+  }
+]
+export const highlightedNotes = [
+  {
+    image: `${baseAssetsUrl}/reunion-anual.png`, 
+    title: '¡Primera reunión anual de nuestra fundación!',
+    date: '29 de Octubre, 2025',
+    lineClasses: 'bg-blue', 
+    buttonText: 'Leer más',
+  },
+  {
+    image: `${baseAssetsUrl}/concurso-dibujo.png`, 
+    title: 'Participa en el concurso de dibujo 2025',
+    date: '29 de Octubre, 2025',
+    lineClasses: 'bg-orange', 
+    buttonText: 'Leer más',
+  },
+  {
+    image: `${baseAssetsUrl}/entrega-de-viveres.png`, 
+    title: 'Entrega de víveres a mas de 20 familias en Guerrero',
+    date: '29 de Octubre, 2025',
+    lineClasses: 'bg-pink', 
+    buttonText: 'Leer más',
+  },
+  {
+    image: `${baseAssetsUrl}/programa-mi-hogar.png`, 
+    title: 'Programa: Mi hogar, seguro es primero',
+    date: '29 de Octubre, 2025',
+    lineClasses: 'bg-purple', 
+    buttonText: 'Leer más',
   }
 ]
