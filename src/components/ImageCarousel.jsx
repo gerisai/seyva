@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Button from "./Button";
 
@@ -27,7 +27,7 @@ export default function ImageCarousel({ slides, intervalTime = 3000 }) {
   }, [slides.length, intervalTime])
 
   return (
-    <div className="w-full h-64">
+    <div className="w-full h-114 relative">
       {/* Slides */}
       { slides.map((slide, index) => (
         <div

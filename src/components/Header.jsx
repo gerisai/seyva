@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 
 export default function Header({ links }) {
   return (
-    <header className="w-full flex items-center justify-between px-6 py-8">
+    <header className="w-full flex items-center justify-between px-6 py-6">
       <Image alt="SEyVA Logo" src='/imagotipo.svg' width={250} height={250} />
       <nav className="flex items-center space-x-8">
         { links.map((link,index) => (
