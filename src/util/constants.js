@@ -117,3 +117,46 @@ export const jumboSlides = [
     buttonClasses: 'bg-blue border-3 primary-button transition-colors duration-900 ease-in-out !text-3xl px-10 py-4'
   }
 ]
+export const contactFormFields = [
+  {
+    label: 'Nombre',
+    placeholder: 'Escribe tu nombre',
+    type: 'text',
+    required: true,
+  },
+  {
+    label: 'Correo electrónico',
+    placeholder: 'correo@ejemplo.com',
+    type: 'email',
+    required: true
+  },
+  {
+    label: 'Teléfono',
+    placeholder: '(xxx) xxx-xxxx',
+    type: 'tel'
+  },
+  {
+    label: 'Localidad o municipio',
+    placeholder: 'Nombre de tu localidad',
+    type: 'text',
+    required: true
+  },
+  {
+    label: 'Tipo de apoyo que solicita o en el que desea colaborar',
+    default: '',
+    required: true,
+    placeholder: 'Selecciona una opción',
+    type: 'select',
+    options: [
+      { value: 'vida-sana', label: 'Vida Sana'},
+      { value: 'puertas-abiertas', label: 'Puertas Abiertas'},
+      { value: 'techo-firme', label: 'Techo firme'},
+      { value: 'mesa-llena', label: 'Mesa llena'}
+    ]
+  },
+  {
+    label: 'Breve descripción de su sitación o motivación',
+    placeholder: 'Historia...',
+    type: 'textarea'
+  }
+]

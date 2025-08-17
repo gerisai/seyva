@@ -10,6 +10,7 @@
   --brand-primary-purple: #7031BA;
   --brand-primary-pink: #EE0C9D;
   --brand-primary-blue: #33A1DC;
+  --brand-primary-gray: #EFEFEF;
 
    /* Carousel Colors */
   --carousel-spot:#7B61FF;
@@ -59,6 +60,10 @@
 
 .bg-green {
   background-color: var(--brand-primary-green);
+}
+
+.bg-gray {
+  background-color: var(--brand-primary-gray);
 }
 
 .text-blue {
@@ -113,6 +118,12 @@
   color: var(--brand-primary-blue);
 }
 
+.required-label::after {
+  content: " *";
+  color: red; /* You can use Tailwind's color classes here, e.g., text-red-500 */
+  @apply text-red-500; /* Example using @apply for Tailwind classes */
+}
+
 /* @media (prefers-color-scheme: dark) { // TODO: This page is not yet ready to handle dark mode
   :root {
     --background: #0a0a0a;
@@ -124,4 +135,9 @@ body {
   /* background: var(--background); */
   color: var(--foreground);
   font-family: var(--font-roboto), var(--font-inter);
+}
+
+/* Tailwind config */
+@theme {
+  --color-brand-blue: #33A1DC;
 }
