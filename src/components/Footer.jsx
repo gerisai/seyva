@@ -6,7 +6,7 @@ import { socialMedia } from '@/util/constants'
 
 export default function Footer () {
   return (
-    <footer className="w-full bg-blue">
+    <footer className="w-full bg-blue text-white">
       <div className="flex h-4">
         <div className="bg-green w-1/4"></div>
         <div className="bg-orange w-1/4"></div>
@@ -31,8 +31,8 @@ export default function Footer () {
           <div className="flex flex-col items-end text-center">
             <p className="text-2xl mb-4">¡Síguenos!</p>
             <div className="flex space-x-3 mb-4">
-              { socialMedia.map((social) => (
-                <MediaIcon alt={social.name} link={social.link} icon={social.icon} width={social.size} height={social.size}/>
+              { socialMedia.map((social,index) => (
+                <MediaIcon key={index} alt={social.name} link={social.link} icon={social.icon} width={social.size} height={social.size}/>
               )) }
             </div>
             <p className="text-xl">

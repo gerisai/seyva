@@ -1,4 +1,10 @@
 export const baseAssetsUrl = 'https://seyva-media-assets.s3.us-west-2.amazonaws.com'
+export const headerLinks = [
+  { text: 'Inicio', href: '#' },
+  { text: 'Experiencias', href: '#' },
+  { text: 'Conócenos', href: '#' },
+  { text: 'Programas', href: '#' }
+]
 export const socialMedia = [
   {
     name: 'YouTube',
