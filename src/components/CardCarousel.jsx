@@ -18,7 +18,7 @@ export default function CardCarousel({ slides }) {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center relative">
       <div className="w-max h-160 overflow-visible">
       { slides.map((slide,index) => {
         const { scale, translate, zIndex } = getPosition(index);
@@ -26,7 +26,7 @@ export default function CardCarousel({ slides }) {
           <div
           key={index}
           className={`
-            absolute top-0 w-4xl left-1/5 h-160 rounded-4xl shadow-lg transition-all duration-500 ease-in-out
+            absolute top-0 w-4xl left-1/2 transform -translate-x-1/2 h-160 rounded-4xl shadow-lg transition-all duration-500 ease-in-out
             ${ index === activeIndex ? '' : slide.cardClasses }
             `
           }
@@ -43,7 +43,7 @@ export default function CardCarousel({ slides }) {
       </div>
 
       {/* Controls */}
-      <div className="mt-4 flex gap-6">
+      <div className="mt-12 flex gap-6">
         <button
           onClick={prevSlide}
           className="text-gray-400"

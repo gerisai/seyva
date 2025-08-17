@@ -10,18 +10,18 @@ const ribbon = [
 export default function LogoRibbon() {
   return (
     <div className="w-full flex">
-      { ribbon.map((block) => (
-        <div className="w-1/4 justify-center items-center text-center overflow-hidden">
-          <div className={`h-4 bg-${block.color} ${ block.name === 'Salud' ? 'mb-6' : 'mb-4' }`}/>
+      { ribbon.map((block,index) => (
+        <div key={index} className="w-1/4 overflow-hidden">
+          <div className={`h-6 bg-${block.color} ${ block.name === 'Salud' ? 'mb-6' : 'mb-4' }`}/>
           <div className="animate-showfrombutton">
             <Image
-              className="pt-6 px-8"
+              className="pt-6 px-8 mx-auto"
               src={block.image}
               alt={block.name}
-              width={150}
-              height={150}
+              width={220}
+              height={220}
             />
-            <h1 className="mt-4 text-xl text-center font-bold text-gray-800">{block.name}</h1>
+            <h1 className="mt-6 text-4xl text-center font-bold text-gray-800">{block.name}</h1>
           </div>
         </div>
       ))}

@@ -13,7 +13,7 @@ export default function IndividualCard({
   lineClasses,
 }) {
   return (
-    <div className="w-fit size-fit rounded-2xl overflow-hidden">
+    <div className="w-full rounded-2xl overflow-hidden">
       <div className="p-4">
         <div className="relative w-full h-64">
           <Image
@@ -25,7 +25,7 @@ export default function IndividualCard({
           />
         </div>
         <p className="text-sm text-gray-600 mb-2 mt-4">{date}</p> 
-        <h2 className="text-lg font-bold text-black mb-2">{title}</h2>
+        <h2 className="text-2xl font-bold text-black mb-2">{title}</h2>
         <div className="flex items-center justify-start gap-12">
           <div className={`h-2 w-6/10 ${lineClasses}`}></div>
           <Link href={buttonLink}>
