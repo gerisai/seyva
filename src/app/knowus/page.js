@@ -53,7 +53,7 @@ export default function Home() {
         { programs.map((program,index) => (
           <ProgramCard key={index} {...program} />
         ))}
-      </div>
+        </div>
       </div>
     </main>
   )
