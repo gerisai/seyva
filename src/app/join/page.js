@@ -1,8 +1,12 @@
+"use client";
+
 import Button from "@/components/Button"
 import ContactForm from "@/components/ContactForm"
+import { useRouter } from "next/navigation"
 import { contactFormFields } from "@/util/constants"
 
 export default function Home() {
+  const router = useRouter()
   return (
     <main className="h-auto flex items-center justify-center flex-col bg-gray text-black">
       <div className="flex flex-col items-center gap-12 py-12 w-3/4 justify-center">
@@ -15,7 +19,12 @@ export default function Home() {
           Tu contribución hace una gran diferencia y nos ayuda a seguir adelante con nuestros programas 
           y proyectos.
         </p>
-        <Button additionalClasses="primary-button px-20 !text-5xl font-bold">Donar</Button>
+        <Button 
+          additionalClasses="primary-button px-20 !text-5xl font-bold"
+          onClick={() => router.push('/donate')}
+        >
+          Donar
+        </Button>
         <p className="text-xl text-center">¡Gracias por tu generosidad!</p>
         <h1 className="text-5xl font-bold text-gray">Súmate a la causa</h1>
         <p className="text-xl text-center">
