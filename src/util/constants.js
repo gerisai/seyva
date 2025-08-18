@@ -229,3 +229,67 @@ export const donationFormFields = [
   }
 ]
 export const predefinedDonationAmounts = ['$20','$50','$100','$500','Otra cantidad']
+export const horizontalCards = [
+  {
+    image: `${baseAssetsUrl}/vida-sana.png`,
+    title: 'Salud',
+    description: 'Todas y todos merecemos la oportunidad de los servicios básicos para llevar una calidad de vida digna.',
+    colorClass: 'text-green',
+    reverseLayout: false,
+  },
+  {
+    image: `${baseAssetsUrl}/concurso-dibujo.png`,
+    title: 'Educación',
+    description: 'El talento que tienen los niños y jóvenes de nuestro país es herencia de un pueblo brillante y con creatividad.',
+    colorClass: 'text-orange',
+    reverseLayout: true,
+  },
+  {
+    image: `${baseAssetsUrl}/techo-firme.png`,
+    title: 'Vivienda',
+    description: 'Un techo en donde alimentarse, estudiar y como espacio de recreación.',
+    colorClass: 'text-purple',
+    reverseLayout: false,
+  },
+  {
+    image: `${baseAssetsUrl}/mesa-llena.png`,
+    title: 'Alimentación',
+    description: 'Un trozo de pan puede alimentar a un futuro artista sin saberlo.',
+    colorClass: 'text-pink',
+    reverseLayout: true,
+  }
+]
+export const programs = [
+  {
+    image: `${baseAssetsUrl}/vida-sana.png`, 
+    title: 'Programa "Vida Sana"',
+    description: "Objetivo: Brindar atención médica integral y gratuita a personas con enfermedades crónicas en comunidades vulnerables.",
+    lineClasses: 'bg-green', 
+    buttonText: 'Leer más',
+    buttonClasses: 'bg-green'
+  },
+  {
+    image: `${baseAssetsUrl}/puertas-abiertas.png`, 
+    title: 'Programa "Puertas Abiertas"',
+    description: "Garantizar el acceso a la educación secundaria y superior para jóvenes en situación de pobreza.",
+    lineClasses: 'bg-orange', 
+    buttonText: 'Leer más',
+    buttonClasses: 'bg-orange'
+  },
+  {
+    image: `${baseAssetsUrl}/techo-firme.png`, 
+    title: 'Programa "Techo Firme"',
+    description: "Mejorar las condiciones de vivienda de familias en zonas marginadas.",
+    lineClasses: 'bg-purple', 
+    buttonText: 'Leer más',
+    buttonClasses: 'bg-purple'
+  },
+  {
+    image: `${baseAssetsUrl}/mesa-llena.png`, 
+    title: 'Programa "Mesa Llena"',
+    description: "Combatir la desnutrición infantil y la inseguridad alimentaria en comunidades rurales.",
+    lineClasses: 'bg-pink', 
+    buttonText: 'Leer más',
+    buttonClasses: 'bg-pink'
+  }
+]
