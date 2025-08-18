@@ -20,7 +20,7 @@ export default function PublicFileCard({
   const visibleItems = isExpanded ? items : items.slice(0, DEFAULT_ITEMS_TO_SHOW);
 
   return (
-    <div className="w-fit rounded-4xl overflow-hidden shadow-lg border border-gray-200">
+    <div className="w-fit h-fit rounded-4xl overflow-hidden shadow-lg border border-gray-200">
       {/* Header */}
       <div className={`flex justify-between items-center p-8 text-white bg-${color}`}>
         <h2 className="text-5xl font-black">{title}</h2>
