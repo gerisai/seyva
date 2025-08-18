@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 
-export default function HorizontalCards({
+export default function HorizontalCard({
   image,
   title,
   description,
@@ -21,11 +21,11 @@ export default function HorizontalCards({
         <p className="mt-4 text-2xl font-light leading-7 text-text-gray" dangerouslySetInnerHTML={{ __html: description }} />
       </div>
 
-      <div className="w-3/5 relative h-52">
+      <div className="w-3/5 relative h-64">
         <Image
           src={image}
           alt={title}
-          layout="fill"
+          fill
           objectFit="cover"
         />
       </div>
@@ -33,7 +33,7 @@ export default function HorizontalCards({
   );
 }
 
-HorizontalCards.propTypes = {
+HorizontalCard.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

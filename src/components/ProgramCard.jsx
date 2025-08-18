@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 import Button from '@/components/Button';
 
-export default function IndividualCard({
+export default function ProgramCard({
   image,
   title,
   description,
@@ -19,8 +19,7 @@ export default function IndividualCard({
         <Image
           src={image}
           alt={title}
-          layout="fill"
-          objectFit="cover"
+          fill
           className="rounded-t-xl rounded-b-xl"
         />
       </div>
@@ -40,7 +39,7 @@ export default function IndividualCard({
   );
 }
 
-IndividualCard.propTypes = {
+ProgramCard.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

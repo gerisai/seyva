@@ -118,6 +118,10 @@
   color: var(--brand-primary-blue);
 }
 
+.mirror-y {
+  transform: scale(-1,1);
+}
+
 .required-label::after {
   content: " *";
   color: red; /* You can use Tailwind's color classes here, e.g., text-red-500 */
