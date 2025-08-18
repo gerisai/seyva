@@ -201,7 +201,6 @@ export const highlightedNotes = [
     buttonText: 'Leer más', 
   }
 ]
-
 export const donationFormFields = [
   {
     label: 'Nombre completo',
@@ -441,7 +440,6 @@ export const stories = [
     textClass: 'text-pink'
   }
 ]
-
 export const educationItems = [
     "Becas para Niñas en Secundaria Rural",
     "Apoyo Escolar para Niños con Discapacidad Intelectual",
@@ -465,7 +463,6 @@ export const educationItems = [
     "Capacitación Docente en Educación Inclusiva",
     "Apoyo Psicoeducativo para Estudiantes con Trastornos de Aprendizaje",
 ];
-
 export const healthItems = [
     "Quimioterapia para Cáncer de Mama",
     "Tratamiento Integral para Diabetes Tipo 2",
@@ -488,7 +485,6 @@ export const healthItems = [
     "Cobertura de Hemodiálisis para Pacientes Renales Crónicos",
     "Control Prenatal y Parto Humanizado para Mujeres en Zonas Rurales"    
 ];
-
 export const foodItems = [
     "Desayunos Escolares Nutritivos",
     "Canastas Básicas para Familias en Inseguridad Alimentaria",
@@ -512,7 +508,6 @@ export const foodItems = [
     "Apoyo Alimentario para Personas en Situación de Calle",
     "Comidas Calientes para Pacientes Hospitalizados sin Recursos",
 ];
-
 export const housingItems = [
     "Construcción de Vivienda para Familias en Extrema Pobreza",
     "Mejoramiento de Techos y Pisos de Tierra",
@@ -536,7 +531,6 @@ export const housingItems = [
     "Adaptación de Viviendas para Personas con Discapacidad",
     "Apoyo en Renta Temporal para Desplazados",
 ];
-
 export const publicFileCards = [
   {
     title:'Educación',
@@ -563,8 +557,8 @@ export const publicFileCards = [
     color: 'purple',
   }
 ]
-
-export const QuoteMain = {
+export const quotes = {
+  nelsonMandela: {
     quote:(
         <>
         La superación de la pobreza no es un<br />
@@ -572,5 +566,5 @@ export const QuoteMain = {
         </>
     ),
     author:"Nelson Mandela"
-
+  }
 };

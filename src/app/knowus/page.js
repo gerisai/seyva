@@ -3,7 +3,7 @@ import HorizontalCard from "@/components/HorizontalCard"
 import Paragraph from "@/components/Paragraph"
 import Quote from "@/components/Quote"
 import ProgramCard from "@/components/ProgramCard"
-import { horizontalCards, programs } from "@/util/constants"
+import { horizontalCards, programs, quotes } from "@/util/constants"
 
 export default function Home() {
   return (
@@ -39,15 +39,7 @@ export default function Home() {
           <strong>la inclusión social y la mejora</strong> continua de la calidad de vida de los sectores más desfavorecidos.
           </p>
         </Paragraph>
-        <Quote 
-          quote={
-            <>
-            La superación de la pobreza no es un<br />
-            gesto de caridad, es un acto de justicia.
-            </>
-          }
-          author="Nelson Mandela"
-        />
+        <Quote {...quotes['nelsonMandela']}/>
         <h1 className="text-5xl font-bold text-gray">Nuestros programas</h1>
         <div className="flex gap-16 py-12 px-12">
         { programs.map((program,index) => (
