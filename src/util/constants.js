@@ -331,7 +331,8 @@ export const stories = [
     buttonText: 'Conoce todo el caso',
     themeColorClass: 'bg-green',
     cardClasses: 'bg-white',
-    buttonClasses: 'bg-green'
+    buttonClasses: 'bg-green',
+    textClass: 'text-green'
   },
   {
     name: 'suenos-que-estudian',
@@ -365,7 +366,8 @@ export const stories = [
     buttonText: 'Conoce todo el caso',
     themeColorClass: 'bg-orange',
     cardClasses: 'bg-white',
-    buttonClasses: 'bg-orange'
+    buttonClasses: 'bg-orange',
+    textClass: 'text-orange'
   },
   {
     name: 'techo-con-esperanza',
@@ -399,7 +401,8 @@ export const stories = [
     buttonText: 'Conoce todo el caso',
     themeColorClass: 'bg-purple',
     cardClasses: 'bg-white',
-    buttonClasses: 'bg-purple'
+    buttonClasses: 'bg-purple',
+    textClass: 'text-purple'
   },
   {
     name: 'pan-para-hoy-y-manana',
@@ -433,6 +436,7 @@ export const stories = [
     buttonText: 'Conoce todo el caso',
     themeColorClass: 'bg-pink',
     cardClasses: 'bg-white',
-    buttonClasses: 'bg-pink'
+    buttonClasses: 'bg-pink',
+    textClass: 'text-pink'
   }
 ]
