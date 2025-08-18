@@ -17,12 +17,12 @@ export default function StoryCard({
     themeColorClass,
     cardClasses
 }){
-        return (
+    return (
         <div className={`flex flex-col rounded-4xl overflow-hidden mx-auto w-fit h-fit shadow-lg ${cardClasses}`}>
             <div className={`${themeColorClass} rounded-t-2xl flex items-center justify-center h-20`}>
                 <h1 className="font-extrabold text-5xl text-white text-center">{header}</h1>
             </div>
-                <div className="relative w-full h-100 overflow-hidden">
+                <div className="relative w-full h-140 overflow-hidden">
                     <Image
                         src={image}
                         alt={header}
@@ -32,7 +32,7 @@ export default function StoryCard({
                 </div>
                 <div className="p-10">
                 <p className="text-right text-gray-500 text-xl mb-4">{date}</p>
-                <h2 className="text-5xl font-extrabold mb-4">{caseTitle}</h2>
+                <h2 className="text-5xl text-gray font-extrabold mb-4">{caseTitle}</h2>
                 <p className="text-black text-xl text-justify">{caseDescription}</p>
             </div>
             <div className={`${themeColorClass} flex items-center justify-center h-18`}>
