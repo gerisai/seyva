@@ -62,6 +62,7 @@ export const headerWords = [
 ]
 export const jumboSlides = [
   {
+    name: 'alivio-al-alma',
     image: `${baseAssetsUrl}/alivio-al-alma.png`,
     icon: '/white_health.svg',
     title: 'Alivio al Alma',
@@ -74,6 +75,7 @@ export const jumboSlides = [
     buttonClasses: 'bg-green !text-3xl'
   },
   {
+    name: 'suenos-que-estudian',
     image: `${baseAssetsUrl}/suenos-que-estudian.png`,
     icon: '/white_education.svg',
     title: 'Sueños que Estudian',
@@ -86,6 +88,7 @@ export const jumboSlides = [
     buttonClasses: 'bg-orange !text-3xl'
   },
   {
+    name: 'techo-con-esperanza',
     image: `${baseAssetsUrl}/un-techo-con-esperanza.png`,
     icon: '/white_house.svg',
     title: 'Un Techo con Esperanza',
@@ -98,6 +101,7 @@ export const jumboSlides = [
     buttonClasses: 'bg-purple !text-3xl'
   },
   {
+    name: 'pan-para-hoy-y-manana',
     image: `${baseAssetsUrl}/pan-para-hoy-y-manana.png`,
     icon: '/white_feed.svg',
     title: 'Pan para Hoy y Mañana',
@@ -110,6 +114,7 @@ export const jumboSlides = [
     buttonClasses: 'bg-pink !text-3xl'
   },
   {
+    name: 'acopio',
     image: `${baseAssetsUrl}/acopio.png`,
     icon: '/logo_white.svg',
     title: 'Centro de acopio',
@@ -290,6 +295,144 @@ export const programs = [
     description: "Combatir la desnutrición infantil y la inseguridad alimentaria en comunidades rurales.",
     lineClasses: 'bg-pink', 
     buttonText: 'Leer más',
+    buttonClasses: 'bg-pink'
+  }
+]
+export const stories = [
+  {
+    name: 'alivio-al-alma',
+    image: `${baseAssetsUrl}/story-green.png`,
+    header: "Alivio al Alma",
+    date: "Ciudad de México a 25 de marzo de 2025.",
+    caseTitle: "Historia del Caso",
+    caseDescription:"Adolfo es un joven Ingeniero Civil del Instituto Politécnico Nacional, el cual presenta el crecimiento de un abseso de grasa en el pectoral izquierdo asi como el crecimiento de dos absesos en la parte dorsal de su espalda, el cual ha ido creciendo y con ello sus complicaciones.",
+    supportDetails: (
+    <>
+      <div className="mb-4">
+        <p className="text-green font-semibold text-4xl mb-2">Solicitud</p>
+        <p className="text-black font-normal text-xl">Obtener apoyo para la cirugía para la remover los lipomas</p>
+      </div>
+      <div className="mb-4">
+        <p className="text-green font-semibold text-4xl mb-2">Cotización Quirurjica</p>
+        <p className="text-black font-normal text-xl">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
+      </div>
+      <div className="px-10">
+        <p className="text-green font-semibold text-4xl mb-8 mt-16">Testimonio</p>
+        <p className="text-black font-normal text-xl text-center">
+          &quot;Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
+          se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
+          la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
+          y un piso firme. Ya no tenemos miedo cuando llueve. Dormimos tranquilos.<br />
+          Nos devolvieron la paz en nuestra casa&quot;
+        </p>
+      </div>
+    </>
+    ),
+    buttonText: 'Conoce todo el caso',
+    themeColorClass: 'bg-green',
+    cardClasses: 'bg-white',
+    buttonClasses: 'bg-green'
+  },
+  {
+    name: 'suenos-que-estudian',
+    image: `${baseAssetsUrl}/story-orange.png`,
+    header: "Sueños que estudian",
+    date: "Ciudad de México a 25 de marzo de 2025.",
+    caseTitle:"Historia del Caso",
+    caseDescription:"Adolfo es un joven Ingeniero Civil del Instituto Politécnico Nacional, el cual presenta el crecimiento de un abseso de grasa en el pectoral izquierdo asi como el crecimiento de dos absesos en la parte dorsal de su espalda, el cual ha ido creciendo y con ello sus complicaciones.",
+    supportDetails: (
+    <>
+      <div className="mb-4">
+        <p className="text-orange font-semibold text-4xl mb-2">Solicitud</p>
+        <p className="text-black font-normal text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
+      </div>
+      <div className="mb-4">
+        <p className="text-orange font-semibold text-4xl mb-2">Cotización Quirurjica</p>
+        <p className="text-black font-normal text-xl">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
+      </div>
+      <div className="px-10">
+        <p className="text-orange font-semibold text-4xl mb-8 mt-16">Testimonio</p>
+        <p className="text-black font-normal text-xl text-center">
+          &quot;Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
+          se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
+          la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
+          y un piso firme. Ya no tenemos miedo cuando llueve. Dormimos tranquilos.<br />
+          Nos devolvieron la paz en nuestra casa&quot;
+        </p>
+      </div>
+    </>
+    ),
+    buttonText: 'Conoce todo el caso',
+    themeColorClass: 'bg-orange',
+    cardClasses: 'bg-white',
+    buttonClasses: 'bg-orange'
+  },
+  {
+    name: 'techo-con-esperanza',
+    image: `${baseAssetsUrl}/story-purple.png`,
+    header: "Un techo con Esperanza",
+    date: "Ciudad de México a 25 de marzo de 2025.",
+    caseTitle:"Historia del Caso",
+    caseDescription:"Adolfo es un joven Ingeniero Civil del Instituto Politécnico Nacional, el cual presenta el crecimiento de un abseso de grasa en el pectoral izquierdo asi como el crecimiento de dos absesos en la parte dorsal de su espalda, el cual ha ido creciendo y con ello sus complicaciones.",
+    supportDetails: (
+    <>
+      <div className="mb-10">
+        <p className="text-purple font-semibold text-4xl mb-2">Solicitud</p>
+        <p className="text-black font-normal text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
+      </div>
+      <div className="mb-10">
+        <p className="text-purple font-semibold text-4xl mb-2">Renovación de espacios en la vivienda</p>
+        <p className="text-black font-normal text-xl ">Se realizaron trabajos de obra en el hogar, en techo y piso.</p>
+      </div>
+      <div className="px-10">
+        <p className="text-purple font-semibold text-4xl mb-8 mt-16">Testimonio</p>
+        <p className="text-black font-normal text-xl text-center">
+          &quot;Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
+          se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
+          la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
+          y un piso firme. Ya no tenemos miedo cuando llueve. Dormimos tranquilos.<br />
+          Nos devolvieron la paz en nuestra casa&quot;
+        </p>
+      </div>
+      </>
+    ),
+    buttonText: 'Conoce todo el caso',
+    themeColorClass: 'bg-purple',
+    cardClasses: 'bg-white',
+    buttonClasses: 'bg-purple'
+  },
+  {
+    name: 'pan-para-hoy-y-manana',
+    image: `${baseAssetsUrl}/story-pink.png`,
+    header: "Pan para Hoy y Mañana",
+    date: "Ciudad de México a 25 de marzo de 2025.",
+    caseTitle:"Historia del Caso",
+    caseDescription:"Adolfo es un joven Ingeniero Civil del Instituto Politécnico Nacional, el cual presenta el crecimiento de un abseso de grasa en el pectoral izquierdo asi como el crecimiento de dos absesos en la parte dorsal de su espalda, el cual ha ido creciendo y con ello sus complicaciones.",
+    supportDetails: (
+    <>
+      <div className="mb-4">
+        <p className="text-pink font-semibold text-4xl mb-2">Solicitud</p>
+        <p className="text-black font-normal text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
+      </div>
+      <div className="mb-4">
+        <p className="text-pink font-semibold text-4xl mb-2">Cotización Quirurjica</p>
+        <p className="text-black font-normal text-xl ">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
+      </div>
+      <div className="px-10">
+        <p className="text-pink font-semibold text-4xl mb-8 mt-16">Testimonio</p>
+        <p className="text-black font-normal text-xl text-center">
+          &quot;Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
+          se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
+          la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
+          y un piso firme. Ya no tenemos miedo cuando llueve. Dormimos tranquilos.<br />
+          Nos devolvieron la paz en nuestra casa&quot;
+        </p>
+      </div>
+    </>
+    ),
+    buttonText: 'Conoce todo el caso',
+    themeColorClass: 'bg-pink',
+    cardClasses: 'bg-white',
     buttonClasses: 'bg-pink'
   }
 ]

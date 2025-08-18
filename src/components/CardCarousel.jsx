@@ -1,8 +1,10 @@
 import JumboCard from "./JumboCard"
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
 
 export default function CardCarousel({ slides }) {
+  const router = useRouter()
   const [activeIndex, setActiveIndex] = useState(0);
   const total = slides.length;
 
@@ -36,7 +38,7 @@ export default function CardCarousel({ slides }) {
             opacity: scale > 0 ? 1 : 0
           }}
           >
-            { index === activeIndex ? <JumboCard {...slide}/> : '' }
+            { index === activeIndex ? <JumboCard {...slide} buttonClick={() => router.push(`${slide.name !== 'acopio' ? `/stories/${slide.name}` : '/join'}`)}/> : '' }
           </div>
         );
       })}
