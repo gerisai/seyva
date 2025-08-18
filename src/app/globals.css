@@ -29,7 +29,7 @@
   --text-gray: #3D3D3D;
   --text-phrase:#575757;
   --text-author: #A7A7A7;
-  --text-author2: #464646;
+  --text-author-simple: #464646;
 
   /* Colors boxes */
   --boxes-gray: #F3F3F3;
@@ -47,12 +47,12 @@
   color: var(--text-phrase);
 }
 
-.text-lightGray {
+.text-lightgray {
   color: var(--text-author);
 }
 
-.text-lightGray2 {
-  color: var(--text-author2);
+.text-lightgray-simple {
+  color: var(--text-author-simple);
 }
 
 .bg-blue {
