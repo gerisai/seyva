@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "./Button";
 import { predefinedDonationAmounts } from "@/util/constants";
 import { useState } from "react";
@@ -43,7 +45,7 @@ export default function DonationForm({ fields }) {
                   <span>$</span>
                   <input
                     type='number'
-                    autofocus
+                    autoFocus
                     className="text-xl focus:outline-none"
                   />
                   </>

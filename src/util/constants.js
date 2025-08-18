@@ -226,6 +226,6 @@ export const donationFormFields = [
     placeholder: '',
     type: 'text',
     required: false,
-  },
+  }
 ]
 export const predefinedDonationAmounts = ['$20','$50','$100','$500','Otra cantidad']
