@@ -196,3 +196,36 @@ export const highlightedNotes = [
     buttonText: 'Leer más',
   }
 ]
+export const donationFormFields = [
+  {
+    label: 'Nombre completo',
+    placeholder: '',
+    type: 'text',
+    required: false,
+  },
+  {
+    label: 'Correo electrónico',
+    placeholder: '',
+    type: 'text',
+    required: false,
+  },
+  {
+    label: 'RFC',
+    placeholder: '',
+    type: 'text',
+    required: false,
+  },
+  {
+    label: 'Código Postal',
+    placeholder: '',
+    type: 'number',
+    required: false,
+  },
+  {
+    label: 'Regimen Fiscal',
+    placeholder: '',
+    type: 'text',
+    required: false,
+  },
+]
+export const predefinedDonationAmounts = ['$20','$50','$100','$500','Otra cantidad']
