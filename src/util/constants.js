@@ -198,7 +198,7 @@ export const highlightedNotes = [
     title: 'Programa: Mi hogar, seguro es primero',
     date: '29 de Octubre, 2025',
     lineClasses: 'bg-purple', 
-    buttonText: 'Leer más',
+    buttonText: 'Leer más', 
   }
 ]
 export const donationFormFields = [
@@ -440,3 +440,131 @@ export const stories = [
     textClass: 'text-pink'
   }
 ]
+export const educationItems = [
+    "Becas para Niñas en Secundaria Rural",
+    "Apoyo Escolar para Niños con Discapacidad Intelectual",
+    "Clases de Regularización en Matemáticas",
+    "Talleres de Alfabetización para Adultos Mayores",
+    "Equipamiento Tecnológico para Estudiantes de Preparatoria",
+    "Becas Universitarias para Jóvenes Indígenas",
+    "Cirugías Reconstructivas por Labio y Paladar Hendido",
+    "Cursos de Robótica para Escuelas Públicas",
+    "Capacitación Docente en Educación Inclusiva",
+    "Apoyo Psicoeducativo para Estudiantes con Trastornos de Aprendizaje",
+    "Material Escolar para Zonas Marginadas",
+    "Becas para Niñas en Secundaria Rural",
+    "Apoyo Escolar para Niños con Discapacidad Intelectual",
+    "Clases de Regularización en Matemáticas",
+    "Talleres de Alfabetización para Adultos Mayores",
+    "Equipamiento Tecnológico para Estudiantes de Preparatoria",
+    "Becas Universitarias para Jóvenes Indígenas",
+    "Cirugías Reconstructivas por Labio y Paladar Hendido",
+    "Cursos de Robótica para Escuelas Públicas",
+    "Capacitación Docente en Educación Inclusiva",
+    "Apoyo Psicoeducativo para Estudiantes con Trastornos de Aprendizaje",
+];
+export const healthItems = [
+    "Quimioterapia para Cáncer de Mama",
+    "Tratamiento Integral para Diabetes Tipo 2",
+    "Cirugía de Cataratas para Adultos Mayores",
+    "Apoyo Psicológico para Víctimas de Violencia",
+    "Rehabilitación Post-Accidente Cerebrovascular",
+    "Tratamiento Antirretroviral para VIH",
+    "Cirugías Reconstructivas por Labio y Paladar Hendido",
+    "Terapias Respiratorias para Niños con Asma Crónica",
+    "Apoyo en Salud Mental para Jóvenes con Depresión",
+    "Cobertura de Hemodiálisis para Pacientes Renales Crónicos",
+    "Control Prenatal y Parto Humanizado para Mujeres en Zonas Rurales",
+    "Cirugía de Cataratas para Adultos Mayores",
+    "Apoyo Psicológico para Víctimas de Violencia",
+    "Rehabilitación Post-Accidente Cerebrovascular",
+    "Tratamiento Antirretroviral para VIH",
+    "Cirugías Reconstructivas por Labio y Paladar Hendido",
+    "Terapias Respiratorias para Niños con Asma Crónica",
+    "Apoyo en Salud Mental para Jóvenes con Depresión",
+    "Cobertura de Hemodiálisis para Pacientes Renales Crónicos",
+    "Control Prenatal y Parto Humanizado para Mujeres en Zonas Rurales"    
+];
+export const foodItems = [
+    "Desayunos Escolares Nutritivos",
+    "Canastas Básicas para Familias en Inseguridad Alimentaria",
+    "Comedores Comunitarios en Zonas Marginadas",
+    "Suplementos Nutricionales para Niños con Desnutrición",
+    "Alimentos Fortificados para Mujeres Embarazadas",
+    "Entrega de Paquetes Alimentarios para Adultos Mayores",
+    "Talleres de Educación Alimentaria y Nutricional",
+    "Huertos Urbanos en Escuelas y Colonias Populares",
+    "Apoyo Alimentario para Personas en Situación de Calle",
+    "Comidas Calientes para Pacientes Hospitalizados sin Recursos",
+    "Distribución de Leche y Cereales en Comunidades Indígenas",
+    "Desayunos Escolares Nutritivos",
+    "Canastas Básicas para Familias en Inseguridad Alimentaria",
+    "Comedores Comunitarios en Zonas Marginadas",
+    "Suplementos Nutricionales para Niños con Desnutrición",
+    "Alimentos Fortificados para Mujeres Embarazadas",
+    "Entrega de Paquetes Alimentarios para Adultos Mayores",
+    "Talleres de Educación Alimentaria y Nutricional",
+    "Huertos Urbanos en Escuelas y Colonias Populares",
+    "Apoyo Alimentario para Personas en Situación de Calle",
+    "Comidas Calientes para Pacientes Hospitalizados sin Recursos",
+];
+export const housingItems = [
+    "Construcción de Vivienda para Familias en Extrema Pobreza",
+    "Mejoramiento de Techos y Pisos de Tierra",
+    "Rehabilitación de Viviendas Afectadas por Desastres Naturales",
+    "Acceso a Materiales de Construcción Subsidiados",
+    "Instalación de Baños y Sistemas Sanitarios Dignos",
+    "Regularización Legal de la Tenencia de Vivienda",
+    "Electrificación para Viviendas en Comunidades Rurales",
+    "Acceso a Agua Potable en Zonas Marginadas",
+    "Adaptación de Viviendas para Personas con Discapacidad",
+    "Apoyo en Renta Temporal para Desplazados",
+    "Asesoría Técnica para Autoconstrucción Segura",
+    "Construcción de Vivienda para Familias en Extrema Pobreza",
+    "Mejoramiento de Techos y Pisos de Tierra",
+    "Rehabilitación de Viviendas Afectadas por Desastres Naturales",
+    "Acceso a Materiales de Construcción Subsidiados",
+    "Instalación de Baños y Sistemas Sanitarios Dignos",
+    "Regularización Legal de la Tenencia de Vivienda",
+    "Electrificación para Viviendas en Comunidades Rurales",
+    "Acceso a Agua Potable en Zonas Marginadas",
+    "Adaptación de Viviendas para Personas con Discapacidad",
+    "Apoyo en Renta Temporal para Desplazados",
+];
+export const publicFileCards = [
+  {
+    title:'Educación',
+    icon:"/white_health.svg",
+    items: educationItems,
+    color:'orange',
+  },
+  {
+    title: 'Salud',
+    icon: '/white_health.svg',
+    items: healthItems,
+    color: 'green',
+  },
+  {
+    title:'Alimentación',
+    icon:"/white_health.svg",
+    items:foodItems,
+    color:'pink',
+  },
+  {
+    title: 'Vivienda',
+    icon: "/white_health.svg",
+    items: housingItems,
+    color: 'purple',
+  }
+]
+export const quotes = {
+  nelsonMandela: {
+    quote:(
+        <>
+        La superación de la pobreza no es un<br />
+        gesto de caridad, es un acto de justicia.
+        </>
+    ),
+    author:"Nelson Mandela"
+  }
+};
