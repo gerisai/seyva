@@ -14,13 +14,13 @@ export const socialMedia = [
   },
   {
     name: 'Facebook',
-    icon: '/icons/SEYVA_ICONS_IG.svg',
+    icon: '/icons/SEYVA_ICONS_FB.svg',
     link: 'https://www.facebook.com/fseyva.mx',
     size: 36
   },
   {
     name: 'Instagram',
-    icon: '/icons/SEYVA_ICONS_FB.svg',
+    icon: '/icons/SEYVA_ICONS_IG.svg',
     link: 'https://www.instagram.com/fseyva_mx',
     size: 36
   },
