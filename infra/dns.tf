@@ -4,9 +4,10 @@ resource "aws_route53_zone" "primary" {
 }
 
 resource "aws_acm_certificate" "tls" {
-  provider          = aws.east
-  domain_name       = local.domain_name
-  validation_method = "DNS"
+  provider                  = aws.east
+  domain_name               = local.domain_name
+  subject_alternative_names = [local.domain_name_alt]
+  validation_method         = "DNS"
   lifecycle {
     create_before_destroy = true
   }
@@ -45,6 +46,15 @@ resource "aws_route53_record" "cf_record" {
   }
 }
 
+resource "aws_route53_record" "www" {
+  zone_id = aws_route53_zone.primary.zone_id
+  name    = "www"
+  type    = "CNAME"
+  ttl     = 5
+  records = ["seyva.mx"]
+}
+
+
 resource "aws_route53_record" "mail_records" {
   for_each = local.mail_records
   zone_id  = aws_route53_zone.primary.zone_id
@@ -53,4 +63,3 @@ resource "aws_route53_record" "mail_records" {
   ttl      = each.value.ttl
   records  = each.value.records
 }
-

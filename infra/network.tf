@@ -19,7 +19,7 @@ resource "aws_cloudfront_distribution" "cf_distribution" {
   }
 
   comment             = "${local.name} CF distribution"
-  aliases             = [local.domain_name]
+  aliases             = [local.domain_name, local.domain_name_alt]
   enabled             = true
   default_root_object = "index.html"
   price_class         = "PriceClass_100" # Only Mexico, USA and Canada
