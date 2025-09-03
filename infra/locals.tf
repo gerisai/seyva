@@ -1,7 +1,8 @@
 locals {
-  project_name = "seyva"
-  name         = "SEyVA"
-  domain_name  = "seyva.mx"
+  project_name    = "seyva"
+  name            = "SEyVA"
+  domain_name     = "seyva.mx"
+  domain_name_alt = "www.seyva.mx"
   mail_records = {
     mx = {
       name = ""
