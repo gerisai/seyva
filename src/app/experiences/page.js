@@ -4,6 +4,7 @@ import { jumboSlides} from "@/util/constants";
 import PublicFileCard from "@/components/PublicFileCard";
 import ProgramCard from "@/components/ProgramCard";
 import { publicFileCards } from '@/util/constants';
+import HorizontalScrollable from "@/components/HorizontalScrollable";
 import Quote from '@/components/Quote';
 import { programs, quotes } from "@/util/constants"; 
 
@@ -17,11 +18,11 @@ export default function Home() {
       </div>
       <div>
       <h1 className="pt-30 text-gray text-center font-bold text-7xl">Nuestros Programas</h1>
-      <div className="flex gap-16 py-12 px-12">
+      <HorizontalScrollable>
         { programs.map((program,index) => (
           <ProgramCard key={index} {...program} />
         ))}
-        </div>
+      </HorizontalScrollable>
       </div>
       <div className="flex flex-col items-center">
       <h1 className="pt-30 text-gray text-center font-bold text-7xl">Archivo Publico</h1>

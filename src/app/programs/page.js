@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image"
 import ProgramCard from "@/components/ProgramCard"
+import HorizontalScrollable from "@/components/HorizontalScrollable"
 import { baseAssetsUrl, programs } from "@/util/constants"
 
 export default function Home() {
@@ -30,11 +33,11 @@ export default function Home() {
           Conoce cada uno de nuestros programas, su impacto y cómo puedes ser parte del cambio.
         </p>
       </div>
-      <div className="flex gap-16 py-12 px-12">
-        { programs.map((program,index) => (
-          <ProgramCard key={index} {...program} />
-        ))}
-      </div>
+      <HorizontalScrollable>
+          { programs.map((program,index) => (
+            <ProgramCard key={index} {...program} />
+          ))}
+      </HorizontalScrollable>
     </main>
   )
 }
