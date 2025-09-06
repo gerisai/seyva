@@ -14,7 +14,7 @@ export default function ProgramCard({
   buttonClick,
 }) {
   return (
-    <div className="w-1/2 rounded-2xl">
+    <div className="w-100 flex-shrink-0 overflow-hidden rounded-2xl">
       <div className="relative w-full h-64">
         <Image
           src={image}
@@ -24,8 +24,10 @@ export default function ProgramCard({
         />
       </div>
       <div className="py-5 text-left">
-        <h2 className="text-3xl font-semibold text-black">{title}</h2>
-        <p className="mt-1 font-normal text-xl text-gray-700">{description}</p>
+        <div className="h-32">
+          <h2 className="text-3xl font-semibold text-black">{title}</h2>
+          <p className="mt-1 font-normal text-xl text-gray-700">{description}</p>
+        </div>
         <div className="flex items-center justify-between mt-6 gap-6"> 
           <div className={`h-2 w-3/4 rounded-full ${lineClasses}`} /> 
           <Button

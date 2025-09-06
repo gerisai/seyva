@@ -133,6 +133,15 @@
   @apply text-red-500; /* Example using @apply for Tailwind classes */
 }
 
+/* globals.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* @media (prefers-color-scheme: dark) { // TODO: This page is not yet ready to handle dark mode
   :root {
     --background: #0a0a0a;

@@ -6,6 +6,7 @@ import CardCarousel from "@/components/CardCarousel";
 import Statistics from "@/components/Statistics";
 import OurPartners from "@/components/OurPartners";
 import IndividualCard from "@/components/IndividualCard";
+import HorizontalScrollable from "@/components/HorizontalScrollable";
 import { imageSlides, headerWords, jumboSlides, highlightedNotes } from "@/util/constants";
 
 export default function Home() {
@@ -30,11 +31,11 @@ export default function Home() {
       </div>
       <OurPartners/>
       <h1 className="pt-10 text-gray font-bold text-5xl">Notas destacadas</h1>
-      <div className="flex gap-16 py-12 px-12">
+      <HorizontalScrollable>
         { highlightedNotes.map((note,index) => (
           <IndividualCard key={index} {...note} />
         ))}
-      </div>
+      </HorizontalScrollable>
     </main>
   );
 }
