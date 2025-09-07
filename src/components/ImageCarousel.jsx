@@ -44,18 +44,30 @@ export default function ImageCarousel({ slides, intervalTime = 3000 }) {
             fill={true}
           />
           {/* Text overlay */}
-          <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-center">
-            <div className="absolute left-1/10 text-left">
-              <h2 className="text-7xl font-bold text-white w-1/3">
+          <div className="absolute inset-0 bg-black/40 flex flex-col justify-center
+            lg:pl-26 lg:items-start lg:text-start
+            xs:items-center xs:text-center"
+          >
+            <div className="flex flex-col 
+              lg:w-1/2 lg:items-start
+              xs:w-3/4 xs:items-center">
+              <h2 className="font-bold text-white
+                lg:text-7xl
+                md:text-5xl
+                xs:text-3xl
+              ">
                 { slide.title }
               </h2>
-              <p className="text-xl mt-2 mb-6 text-gray-200 w-1/2">
+              <p className="mt-2 text-gray-200
+                sm:block sm:text-xl
+                hidden
+              ">
                 { slide.description }
               </p>
               <Button onClick={() => router.push(slide.link)} additionalClasses={`
-                border-3 primary-button
+                mt-6 border-3 primary-button
                 transition-colors duration-900 ease-in-out
-                !text-2xl
+                md:text-2xl
                 !px-12 !py-2
               `}>
               { slide.buttonText }
@@ -68,7 +80,7 @@ export default function ImageCarousel({ slides, intervalTime = 3000 }) {
       {/* Left */}
       <button
         onClick={prevSlide}
-        className="absolute left-0 px-8 h-full top-1/2 -translate-y-1/2 transition-shadow duration-300 ease-in-out hover:shadow-[inset_1em_0_1em_0em_rgba(255,255,255,0.1)] text-white z-1"
+        className="absolute left-0 md:px-8 h-full top-1/2 -translate-y-1/2 transition-shadow duration-300 ease-in-out hover:shadow-[inset_1em_0_1em_0em_rgba(255,255,255,0.1)] text-white z-1"
       >
         <ChevronLeft size={48} />
       </button>
@@ -76,7 +88,7 @@ export default function ImageCarousel({ slides, intervalTime = 3000 }) {
       {/* Right */}
       <button
         onClick={nextSlide}
-        className="absolute right-0 px-8 h-full top-1/2 -translate-y-1/2 transition-shadow duration-300 ease-in-out hover:shadow-[inset_-1em_0_1em_0em_rgba(255,255,255,0.1)] text-white z-1"
+        className="absolute right-0 md:px-8 h-full top-1/2 -translate-y-1/2 transition-shadow duration-300 ease-in-out hover:shadow-[inset_-1em_0_1em_0em_rgba(255,255,255,0.1)] text-white z-1"
       >
         <ChevronRight size={48} />
       </button>
