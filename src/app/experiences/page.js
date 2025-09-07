@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="bg-gray pt-10">
       <div className="flex flex-col gap-12">
-      <h1 className="text-gray text-center font-bold 
+      <h1 className="text-gray text-center font-bold
         lg:text-7xl
         md:text-6xl
         sm:text-5xl
@@ -23,7 +23,6 @@ export default function Home() {
       </h1>
       <CardCarousel slides={jumboSlides}/>
       </div>
-      <div>
       <h1 className="pt-30 text-gray text-center font-bold 
         lg:text-7xl
         md:text-6xl
@@ -37,7 +36,6 @@ export default function Home() {
           <ProgramCard key={index} {...program} />
         ))}
       </HorizontalScrollable>
-      </div>
       <div className="flex flex-col items-center">
       <h1 className="pt-30 text-gray text-center font-bold 
         lg:text-7xl
