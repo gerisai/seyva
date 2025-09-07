@@ -10,6 +10,11 @@ export default function CardCarousel({ slides }) {
 
   const nextSlide = () => setActiveIndex((prev) => (prev + 1) % total);
   const prevSlide = () => setActiveIndex((prev) => (prev - 1 + total) % total);
+  const getSlideFn = (translate) => { 
+    if(translate === 0) return null
+    if(translate > 0) return nextSlide
+    if(translate < 0) return prevSlide
+  }
 
   const getPosition = (index) => { // Not sure why I wasted time parameterizing this if anyway will only support a 5-element carousel with this logic XD
     const diff = (index - activeIndex + total) % total;
@@ -37,6 +42,7 @@ export default function CardCarousel({ slides }) {
             zIndex,
             opacity: scale > 0 ? 1 : 0
           }}
+          onClick={getSlideFn(translate)}
           >
             { index === activeIndex ? <JumboCard {...slide} buttonClick={() => router.push(`${slide.name !== 'acopio' ? `/stories/${slide.name}` : '/join'}`)}/> : '' }
           </div>
@@ -73,4 +79,3 @@ export default function CardCarousel({ slides }) {
     </div>
   )
 }
-
