@@ -29,6 +29,18 @@ export const socialMedia = [
     icon: '/icons/SEYVA_ICONS_X.svg',
     link: 'https://x.com/fseyva_mx',
     size: 36
+  },
+  {
+    name: 'Threads',
+    icon: '/icons/SEYVA_ICONS_THREADS.svg',
+    link: 'https://www.threads.com/@fseyva_mx?igshid=NTc4MTIwNjQ2YQ==',
+    size: 36
+  },
+  {
+    name: 'TikTok',
+    icon: '/icons/SEYVA_ICONS_TT.svg',
+    link: 'https://www.tiktok.com/@fseyva_mx?iis_from_webapp1&sender_device=pc',
+    size: 36
   }
 ]
 export const imageSlides = [
