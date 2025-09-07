@@ -158,4 +158,5 @@ body {
 /* Tailwind config */
 @theme {
   --color-brand-blue: #33A1DC;
+  --breakpoint-xs: 20rem;
 }

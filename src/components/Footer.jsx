@@ -18,6 +18,7 @@ export default function Footer () {
         <div className="flex flex-row items-center justify-between">
           <div className="flex flex-col items-start text-center">
             <Image
+              className="hidden md:block"
               src="/imagotipo_white.svg"
               alt="Logo"
               width={240}
@@ -41,7 +42,7 @@ export default function Footer () {
           </div>
         </div>
 
-        <div className="text-sm sm:text-center lg:text-start"> 
+        <div className="text-sm xs:text-center lg:text-start"> 
           <p className="hidden leading-tight lg:inline">
             Este sitio web utiliza cookies para mejorar su experiencia. Si continúa navegando se entenderá que otorgó su consentimiento para el uso de dichas cookies, si desea obtener más información consulte nuestro{' '}
           </p>

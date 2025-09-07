@@ -20,7 +20,7 @@ export default function Header({ links }) {
   return (
     <header className="w-full flex items-center justify-between px-6 py-6">
       <Link href="/">
-        <Image className={menuOpened ? "opacity-0" : "opacity-100"}alt="SEyVA Logo" src='/imagotipo.svg' width={250} height={250} />
+        <Image className={menuOpened ? "opacity-0" : "opacity-100"} alt="SEyVA Logo" src='/imagotipo.svg' width={250} height={250} />
       </Link>
       <nav className="flex">
         <div className="hidden lg:flex items-center space-x-8">
