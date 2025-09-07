@@ -12,7 +12,7 @@ export default function LogoRibbon() {
     <div className="w-full flex">
       { ribbon.map((block,index) => (
         <div key={index} className="w-1/4 overflow-hidden">
-          <div className={`h-6 bg-${block.color} ${ block.name === 'Salud' ? 'mb-6' : 'mb-4' }`}/>
+          <div className={`h-6 bg-${block.color} mb-4`}/>
           <div className="animate-showfrombutton">
             <Image
               className="pt-6 px-8 mx-auto"
@@ -21,7 +21,13 @@ export default function LogoRibbon() {
               width={220}
               height={220}
             />
-            <h1 className="mt-6 text-4xl text-center font-bold text-gray-800">{block.name}</h1>
+            <h1 className="mt-6 text-center font-bold text-gray-800
+              lg:text-4xl
+              md:text-3xl
+              sm:text-2xl sm:block
+              hidden
+            ">{block.name}
+            </h1>
           </div>
         </div>
       ))}
