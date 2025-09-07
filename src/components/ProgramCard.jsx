@@ -14,8 +14,22 @@ export default function ProgramCard({
   buttonClick,
 }) {
   return (
-    <div className="w-100 flex-shrink-0 overflow-hidden rounded-2xl">
-      <div className="relative w-full h-64">
+    <div className="flex-shrink-0 overflow-hidden rounded-2xl
+      2xl:w-100
+      xl:w-90
+      lg:w-80
+      md:w-70
+      sm:w-60
+      xs:w-60
+    ">
+      <div className="relative w-full
+        2xl:h-64
+        xl:h-60
+        lg:h-54
+        md:h-50
+        sm:h-48
+        xs:h-48
+      ">
         <Image
           src={image}
           alt={title}
@@ -24,15 +38,29 @@ export default function ProgramCard({
         />
       </div>
       <div className="py-5 text-left">
-        <div className="h-32">
-          <h2 className="text-3xl font-semibold text-black">{title}</h2>
-          <p className="mt-1 font-normal text-xl text-gray-700">{description}</p>
+        <div className="
+          lg:h-36
+          md:h-40
+          xs:h-40
+        ">
+          <h2 className="font-semibold text-black
+            lg:text-3xl
+            md:text-2xl
+            xs:text-xl
+          ">
+            {title}
+          </h2>
+          <p className="mt-1 font-normal md:text-xl text-gray-700">{description}</p>
         </div>
         <div className="flex items-center justify-between mt-6 gap-6"> 
           <div className={`h-2 w-3/4 rounded-full ${lineClasses}`} /> 
           <Button
             onClick={buttonClick}
-            additionalClasses={`text-white text-nowrap rounded-full flex items-center justify-center ${buttonClasses}`}>
+            additionalClasses={`text-white text-nowrap rounded-full flex items-center justify-center ${buttonClasses}
+              lg:px-6 lg:py-4
+              md:px-4 md:py-2
+              xs:px-2 xs:py-0
+            `}>
             {buttonText}
           </Button>
         </div>
