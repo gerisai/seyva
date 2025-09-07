@@ -1,4 +1,4 @@
-export default function Statistics({ helped = 2759 }) {
+export default function Statistics({ helped = 37 }) {
 
   return (
     <div className="flex flex-col justify-center items-center">
