@@ -2,8 +2,15 @@ export default function Statistics({ helped = 2759 }) {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 className="text-[12em] font-bold text-blue counter leading-none">+</h1>
-      <h1 className="text-6xl font-bold text-gray-700">Beneficiados</h1>
+      <h1 className="font-bold text-blue counter leading-none
+        xl:text-[12em] lg:text-[10em] md:text-[8em] sm:text-[6em] xs:text-[5em]">+</h1>
+      <h1 className="font-bold text-gray-700
+        xl:text-6xl
+        lg:text-5xl
+        md:text-4xl
+        sm:text-3xl
+        xs:text-2xl
+      ">Beneficiados</h1>
 
       <style>{`
         @property --num {
