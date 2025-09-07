@@ -3,8 +3,11 @@ import Button from "./Button";
 
 export default function ContactForm({ fields }) {
   return (
-    <div className="bg-white rounded-4xl shadow-lg w-3/4 bg-gray">
-      <div className="bg-blue text-white text-center py-4 text-5xl rounded-t-4xl font-bold">
+    <div className="bg-white rounded-4xl shadow-lg md:w-3/4 bg-gray">
+      <div className="bg-blue text-white text-center py-4 rounded-t-4xl font-bold
+        md:text-5xl
+        xs:text-4xl
+      ">
         Formulario
       </div>
       {/* Logo */}
@@ -20,23 +23,23 @@ export default function ContactForm({ fields }) {
         </div>
 
         {/* Form */}
-        <form className="space-y-5">
+        <form className="space-y-5 sm:text-start">
 
           { fields.map((field,index) => 
             ( field.type !== 'select' ?
             <div key={index}>
-              <label className={`block text-2xl font-medium text-gray mb-1 ${field.required && 'required-label'}`}>
+              <label className={`block sm:text-2xl font-medium text-gray mb-1 ${field.required && 'required-label'}`}>
                 {field.label}
               </label>
               { field.type !== 'textarea' ? 
                 <input
                   type={field.type}
-                  className="w-full border border-gray-300 rounded-2xl px-3 py-2 text-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                  className="w-full border border-gray-300 rounded-2xl px-3 py-2 sm:text-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue"
                   placeholder={field.placeholder}
                 />
                 :
                 <textarea 
-                  className="w-full border border-gray-300 rounded-2xl px-3 py-2 text-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                  className="w-full border border-gray-300 rounded-2xl px-3 py-2 sm:text-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue"
                   placeholder={field.placeholder}
                   rows={5}
                 />
@@ -44,11 +47,11 @@ export default function ContactForm({ fields }) {
             </div>
             : 
             <div key={index}>
-            <label className={`block text-2xl font-medium text-gray mb-1 ${field.required && 'required-label'}`}>
+            <label className={`block sm:text-2xl font-medium text-gray mb-1 ${field.required && 'required-label'}`}>
               {field.label}
             </label>
             <select
-              className="bg-gray w-full border border-gray-300 rounded-2xl px-3 py-2 text-2xl bg-white focus:outline-none focus:ring-2 focus:ring-brand-blue"
+              className="bg-gray w-full border border-gray-300 rounded-2xl px-3 py-2 sm:text-2xl bg-white focus:outline-none focus:ring-2 focus:ring-brand-blue"
               defaultValue={field.default}
             >
               <option value="" disabled>
@@ -66,9 +69,9 @@ export default function ContactForm({ fields }) {
             <input
               id="privacy"
               type="checkbox"
-              className="h-4 w-4 mt-[8px] text-blue font-bold border-gray-300 rounded focus:ring-brand-blue"
+              className="h-4 w-4 xs:mt-[4px] sm:mt-[8px] text-blue font-bold border-gray-300 rounded focus:ring-brand-blue"
             />
-            <label htmlFor="privacy" className="ml-2 text-2xl">
+            <label htmlFor="privacy" className="ml-2 sm:text-2xl">
               He leído y acepto el{" "}
               <a
                 href="#" // TODO: change for actual privacy notice link
@@ -80,7 +83,7 @@ export default function ContactForm({ fields }) {
             </label>
           </div>
           
-          <p className="text-red-500 text-xl mb-2">*Esto es un campo obligatorio</p>
+          <p className="text-red-500 sm:text-xl mb-2">*Esto es un campo obligatorio</p>
 
           <div className="flex flex-col items-center">
             <p className="text-sm mb-2">
@@ -96,7 +99,7 @@ export default function ContactForm({ fields }) {
                 primary-button mt-6
                 border-3 transition-colors
                 font-bold
-                duration-900 ease-in-out !text-3xl
+                duration-900 ease-in-out sm:text-3xl
                 !py-2 w-1/3
               "
               type="submit"
