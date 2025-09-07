@@ -15,7 +15,13 @@ export default function Home() {
     <main className="h-auto flex items-center justify-center flex-col bg-white text-black">
       <ImageCarousel slides={imageSlides}/>
       <LogoRibbon/>
-      <div className="flex flex-col items-start py-26 px-26 gap-6">
+      <div className="flex flex-col items-start gap-6
+        xl:py-26 xl:px-26
+        lg:py-20 lg:px-16
+        md:py-18 md:px-12
+        sm:py-16 sm:px-10
+        xs:py-14 xs:px-4
+        ">
         <SlideHeader words={headerWords} />
         <p className="w-3/4 text-xl">
           En la fundación SEYVA tenemos como objetivo contribuir al <strong>bienestar integral </strong>
@@ -24,13 +30,29 @@ export default function Home() {
           orientación jurídica y desarrollo comunitario.
         </p>
       </div>
-      <div className="flex flex-col gap-16 text-center mt-30 mb-6">
-        <h1 className="text-gray font-bold text-7xl">Experiencias</h1>
+      <div className="flex flex-col gap-16 text-center mb-6
+        lg:mt-30
+        md:mt-24
+        sm:mt-18
+        xs:mt-12
+        ">
+        <h1 className="text-gray font-bold 
+          lg:text-7xl
+          md:text-6xl
+          sm:text-5xl
+          xs:text-4xl
+          "
+        >
+            Experiencias
+        </h1>
         <CardCarousel slides={jumboSlides}/>
         <Statistics/>
       </div>
       <OurPartners/>
-      <h1 className="pt-10 text-gray font-bold text-5xl">Notas destacadas</h1>
+      <h1 className="pt-10 text-gray font-bold 
+      lg:text-5xl
+      xs:text-4xl"
+      >Notas destacadas</h1>
       <HorizontalScrollable>
         { highlightedNotes.map((note,index) => (
           <IndividualCard key={index} {...note} />
