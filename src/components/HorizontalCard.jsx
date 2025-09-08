@@ -14,14 +14,19 @@ export default function HorizontalCard({
         reverseLayout ? 'flex-row-reverse' : 'flex-row'
       } items-center overflow-hidden gap-8`}
     >
-      <div className="flex-1 px-7">
+      <div className="flex-1 px-7 xs:text-center md:text-start">
         <h2 className={`text-4xl font-bold ${colorClass}`}>
           {title}
         </h2>
-        <p className="mt-4 text-2xl font-light leading-7 text-text-gray" dangerouslySetInnerHTML={{ __html: description }} />
+        <p className="mt-4 font-light leading-7 text-text-gray
+          md:text-2xl
+          xs:text-xl
+        ">
+          {description}
+        </p>
       </div>
 
-      <div className="w-3/5 relative h-64">
+      <div className="md:w-3/5 relative h-64 md:block hidden">
         <Image
           src={image}
           alt={title}

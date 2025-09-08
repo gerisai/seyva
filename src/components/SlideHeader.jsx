@@ -5,7 +5,13 @@ export default function SlideHeader({ words, intervalTime = 3 }) {
 
   return (
     <div className="flex">
-      <h1 className="text-gray text-8xl font-bold flex gap-3">
+      <h1 className="text-gray font-bold flex gap-3
+        xl:text-8xl
+        lg:text-7xl
+        md:text-6xl
+        sm:text-5xl
+        xs:text-4xl
+      ">
         Vivir es
         <span className="relative h-[1em] overflow-hidden inline-block">
           <span className="animate-slide block">

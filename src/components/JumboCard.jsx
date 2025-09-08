@@ -15,8 +15,14 @@ export default function JumboCard({
   cardClasses,
 }) {
   return (
-    <div className={`h-160 flex rounded-4xl overflow-hidden ${cardClasses}`}>
-      <div className={`w-1/2 p-8 flex flex-col justify-between text-white text-start`}> 
+    <div className={`flex rounded-4xl overflow-hidden ${cardClasses}
+      xl:h-160
+      lg:h-140
+      md:h-120
+      sm:h-100
+      xs:h-80
+    `}>
+      <div className={`hidden w-1/2 p-8 sm:flex flex-col justify-between text-white text-start`}> 
         { icon && (
           <Image
             src={icon}
@@ -27,12 +33,16 @@ export default function JumboCard({
           />
         )}
         <div className="flex flex-col p-4 overflow-hidden">
-          <h2 className="text-6xl font-bold mb-2">{title}</h2>
+          <h2 className="font-bold mb-2
+            lg:text-6xl
+            md:text-4xl
+            sm:text-3xl
+          ">{title}</h2>
           { description && description }
         </div>
       </div>
 
-      <div className="w-1/2 relative">
+      <div className="xs:w-full sm:w-1/2 relative">
         { image && (
           <Image
             src={image}

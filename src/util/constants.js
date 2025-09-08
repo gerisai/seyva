@@ -29,6 +29,18 @@ export const socialMedia = [
     icon: '/icons/SEYVA_ICONS_X.svg',
     link: 'https://x.com/fseyva_mx',
     size: 36
+  },
+  {
+    name: 'Threads',
+    icon: '/icons/SEYVA_ICONS_THREADS.svg',
+    link: 'https://www.threads.com/@fseyva_mx?igshid=NTc4MTIwNjQ2YQ==',
+    size: 36
+  },
+  {
+    name: 'TikTok',
+    icon: '/icons/SEYVA_ICONS_TT.svg',
+    link: 'https://www.tiktok.com/@fseyva_mx?iis_from_webapp1&sender_device=pc',
+    size: 36
   }
 ]
 export const imageSlides = [
@@ -68,11 +80,11 @@ export const jumboSlides = [
     title: 'Alivio al Alma',
     description: (
     <div>
-      <p className="text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p>
+      <p className="md:text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p>
     </div>),
     buttonText: 'Conoce más',
     cardClasses: 'bg-green',
-    buttonClasses: 'bg-green !text-3xl'
+    buttonClasses: 'bg-green md:text-3xl xs:text-xl'
   },
   {
     name: 'suenos-que-estudian',
@@ -81,11 +93,11 @@ export const jumboSlides = [
     title: 'Sueños que Estudian',
     description: (
     <div>
-      <p className="text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
+      <p className="md:text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
     </div>),
     buttonText: 'Conoce más',
     cardClasses: 'bg-orange',
-    buttonClasses: 'bg-orange !text-3xl'
+    buttonClasses: 'bg-orange md:text-3xl xs:text-xl'
   },
   {
     name: 'techo-con-esperanza',
@@ -94,11 +106,11 @@ export const jumboSlides = [
     title: 'Un Techo con Esperanza',
     description: (
     <div>
-      <p className="text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
+      <p className="md:text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
     </div>),
     buttonText: 'Conoce más',
     cardClasses: 'bg-purple',
-    buttonClasses: 'bg-purple !text-3xl'
+    buttonClasses: 'bg-purple md:text-3xl xs:text-xl'
   },
   {
     name: 'pan-para-hoy-y-manana',
@@ -107,11 +119,11 @@ export const jumboSlides = [
     title: 'Pan para Hoy y Mañana',
     description: (
     <div>
-      <p className="text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
+      <p className="md:text-xl leading-relaxed">Obtener apoyo para la cirugía para la remover lipomas; uno en región pectoral izquierda y dos más en reglón dorsal</p> 
     </div>),
     buttonText: 'Conoce más',
     cardClasses: 'bg-pink',
-    buttonClasses: 'bg-pink !text-3xl'
+    buttonClasses: 'bg-pink md:text-3xl xs:text-xl'
   },
   {
     name: 'acopio',
@@ -120,12 +132,12 @@ export const jumboSlides = [
     title: 'Centro de acopio',
     description: (
     <div>
-      <p className="text-3xl font-semibold mb-1">Taxco, Guerrero</p>
-      <p className="text-xl leading-relaxed">Estamos organizando un pequeño acopio para recaudar fondos y seguir transformando vidas</p> 
+      <p className="lg:text-3xl md:text-2xl sm:text-xl font-semibold mb-1">Taxco, Guerrero</p>
+      <p className="md:text-xl leading-relaxed">Estamos organizando un pequeño acopio para recaudar fondos y seguir transformando vidas</p> 
     </div>),
     buttonText: 'Súmate',
     cardClasses: 'bg-blue',
-    buttonClasses: 'bg-blue border-3 primary-button transition-colors duration-900 ease-in-out !text-3xl px-10 py-4'
+    buttonClasses: 'bg-blue border-3 primary-button transition-colors duration-900 ease-in-out md:text-3xl xs:text-xl px-10 py-4'
   }
 ]
 export const contactFormFields = [

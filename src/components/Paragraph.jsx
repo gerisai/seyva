@@ -4,9 +4,15 @@ import PropTypes from 'prop-types';
 export default function Paragraph({ title, content, children }) {
   return (
     <div className="flex flex-col max-w-2xl mx-auto px-4">
-      <h2 className="text-5xl font-bold text-blue mb-5">{title}</h2>
+      <h2 className="font-bold text-blue mb-5
+      lg:text-5xl lg:text-start
+      md:text-4xl 
+      xs:text-3xl xs:text-center
+      ">
+        {title}
+      </h2>
       { content &&
-      <p className="text-lg text-gray-800">{content}</p>
+      <p className="lg:text-lg text-gray-800">{content}</p>
       }
       { children && children }
     </div>

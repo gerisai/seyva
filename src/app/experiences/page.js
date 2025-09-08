@@ -1,4 +1,3 @@
-"use client";
 import CardCarousel from "@/components/CardCarousel";
 import { jumboSlides} from "@/util/constants";
 import PublicFileCard from "@/components/PublicFileCard";
@@ -8,24 +7,47 @@ import HorizontalScrollable from "@/components/HorizontalScrollable";
 import Quote from '@/components/Quote';
 import { programs, quotes } from "@/util/constants"; 
 
+export const metadata = {
+  title: "Experiencias"
+};
+
 export default function Home() {
 
   return (
     <main className="bg-gray pt-10">
       <div className="flex flex-col gap-12">
-      <h1 className="text-gray text-center font-bold text-7xl">Historias destacadas</h1>
+      <h1 className="text-gray text-center font-bold
+        lg:text-7xl
+        md:text-6xl
+        sm:text-5xl
+        xs:text-4xl
+      ">
+        Historias destacadas
+      </h1>
       <CardCarousel slides={jumboSlides}/>
       </div>
-      <div>
-      <h1 className="pt-30 text-gray text-center font-bold text-7xl">Nuestros Programas</h1>
+      <h1 className="pt-30 text-gray text-center font-bold 
+        lg:text-7xl
+        md:text-6xl
+        sm:text-5xl
+        xs:text-4xl
+      ">
+        Nuestros Programas
+      </h1>
       <HorizontalScrollable>
         { programs.map((program,index) => (
           <ProgramCard key={index} {...program} />
         ))}
       </HorizontalScrollable>
-      </div>
       <div className="flex flex-col items-center">
-      <h1 className="pt-30 text-gray text-center font-bold text-7xl">Archivo Publico</h1>
+      <h1 className="pt-30 text-gray text-center font-bold 
+        lg:text-7xl
+        md:text-6xl
+        sm:text-5xl
+        xs:text-4xl
+      ">
+        Archivo Publico
+      </h1>
       <div className="w-3/4 flex flex-wrap justify-center gap-12 mt-12">
       { publicFileCards.map((card,index) => (
         <PublicFileCard key={index} {...card}/>

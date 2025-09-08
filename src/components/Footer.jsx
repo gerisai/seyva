@@ -14,16 +14,17 @@ export default function Footer () {
         <div className="bg-pink w-1/4"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-col gap-2 px-16 pt-12 pb-6">
+      <div className="mx-auto flex flex-col gap-2 px-16 pt-12 pb-6">
         <div className="flex flex-row items-center justify-between">
           <div className="flex flex-col items-start text-center">
             <Image
+              className="hidden md:block"
               src="/imagotipo_white.svg"
               alt="Logo"
               width={240}
               height={60}
             />
-            <p className="whitespace-nowrap overflow-hidden text-ellipsis">
+            <p className="hidden lg:flex whitespace-nowrap overflow-hidden text-ellipsis">
               Avenida Taxqueña #1355, Colonia Campestre Churubusco, Delegación Coyoacán
             </p>
           </div>
@@ -41,16 +42,16 @@ export default function Footer () {
           </div>
         </div>
 
-        <div className="text-sm"> 
-          <p className="leading-tight inline">
+        <div className="text-sm xs:text-center lg:text-start"> 
+          <p className="hidden leading-tight lg:inline">
             Este sitio web utiliza cookies para mejorar su experiencia. Si continúa navegando se entenderá que otorgó su consentimiento para el uso de dichas cookies, si desea obtener más información consulte nuestro{' '}
-            <a
-              href="" // TODO: href to privacy notice
-              className="underline"
-            >
-              Aviso de Privacidad.
-            </a>
           </p>
+          <a
+            href="" // TODO: href to privacy notice
+            className="underline"
+          >
+              Aviso de Privacidad.
+          </a>
         </div>
       </div> 
     </footer>

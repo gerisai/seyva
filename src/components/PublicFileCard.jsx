@@ -22,8 +22,15 @@ export default function PublicFileCard({
   return (
     <div className="w-fit h-fit rounded-4xl overflow-hidden shadow-lg border border-gray-200">
       {/* Header */}
-      <div className={`flex justify-between items-center p-8 text-white bg-${color}`}>
-        <h2 className="text-5xl font-black">{title}</h2>
+      <div className={`flex items-center p-8 text-white bg-${color}
+        sm:justify-between
+        xs:justify-center
+      `}>
+        <h2 className="font-black text-5xl hidden
+          sm:block
+        ">
+          {title}
+        </h2>
         {icon && (
           <Image src={icon} alt={`${title} icon`} width={80} height={80} />
         )}

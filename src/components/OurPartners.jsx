@@ -12,16 +12,27 @@ export default function OurPartners() {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center py-8">
+    <div className="w-full flex flex-col items-center xl:py-8 lg:py-6 md:py-4 sm:py-2 xs:py-0">
       <div className="w-full bg-light-gray py-4 text-center">
-        <h2 className="font-bold text-5xl text-gray">Nuestros socios</h2>
+        <h2 className="font-bold text-gray
+        lg:text-5xl
+        xs:text-4xl
+        ">
+          Nuestros socios
+        </h2>
       </div>
-      <div className={`transition-all duration-500 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} w-full h-90 mt-8`}>
+      <div className={`transition-all duration-500 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} w-full 
+        xl:h-90
+        lg:h-80
+        md:h-70
+        sm:h-50
+        xs:h-40
+      `}>
           <Image
           src="/SEYVA_PARTNERS_TEST.svg"
           alt="Nuestros socios"
           fill
-          className="mt-10"
+          className="xl:mt-10 lg:mt-8 md:mt-6 sm:mt-4 xs:mt-2"
         />
       </div>
     </div>
