@@ -321,16 +321,16 @@ export const stories = [
     supportDetails: (
     <>
       <div className="mb-4">
-        <p className="text-green font-semibold text-4xl mb-2">Solicitud</p>
-        <p className="text-black font-normal text-xl">Obtener apoyo para la cirugía para la remover los lipomas</p>
+        <p className="text-green font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl mb-2">Solicitud</p>
+        <p className="text-black font-normal sm:text-xl">Obtener apoyo para la cirugía para la remover los lipomas</p>
       </div>
       <div className="mb-4">
-        <p className="text-green font-semibold text-4xl mb-2">Cotización Quirurjica</p>
-        <p className="text-black font-normal text-xl">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
+        <p className="text-green font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl mb-2">Cotización Quirurjica</p>
+        <p className="text-black font-normal sm:text-xl">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
       </div>
-      <div className="px-10">
-        <p className="text-green font-semibold text-4xl mb-8 mt-16">Testimonio</p>
-        <p className="text-black font-normal text-xl text-center">
+      <div className="md:px-10">
+        <p className="text-green font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl md:mb-8 lg:mt-16 md:mt-12 sm:mt-8 xs:mt-6">Testimonio</p>
+        <p className="text-black font-normal md:text-xl xs:text-xs md:text-center">
           &quot;Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
           se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
           la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
@@ -356,16 +356,16 @@ export const stories = [
     supportDetails: (
     <>
       <div className="mb-4">
-        <p className="text-orange font-semibold text-4xl mb-2">Solicitud</p>
-        <p className="text-black font-normal text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
+        <p className="text-orange font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl mb-2">Solicitud</p>
+        <p className="text-black font-normal sm:text-xl">Obtener apoyo para la cirugía para la remover los lipomas</p>
       </div>
       <div className="mb-4">
-        <p className="text-orange font-semibold text-4xl mb-2">Cotización Quirurjica</p>
-        <p className="text-black font-normal text-xl">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
+        <p className="text-orange font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl mb-2">Cotización Quirurjica</p>
+        <p className="text-black font-normal sm:text-xl">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
       </div>
-      <div className="px-10">
-        <p className="text-orange font-semibold text-4xl mb-8 mt-16">Testimonio</p>
-        <p className="text-black font-normal text-xl text-center">
+      <div className="md:px-10">
+        <p className="text-orange font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl md:mb-8 lg:mt-16 md:mt-12 sm:mt-8 xs:mt-6">Testimonio</p>
+        <p className="text-black font-normal md:text-xl xs:text-xs md:text-center">
           &quot;Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
           se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
           la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
@@ -391,16 +391,16 @@ export const stories = [
     supportDetails: (
     <>
       <div className="mb-10">
-        <p className="text-purple font-semibold text-4xl mb-2">Solicitud</p>
-        <p className="text-black font-normal text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
+        <p className="text-purple font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl mb-2">Solicitud</p>
+        <p className="text-black font-normal sm:text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
       </div>
       <div className="mb-10">
-        <p className="text-purple font-semibold text-4xl mb-2">Renovación de espacios en la vivienda</p>
-        <p className="text-black font-normal text-xl ">Se realizaron trabajos de obra en el hogar, en techo y piso.</p>
+        <p className="text-purple font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl mb-2">Renovación de espacios en la vivienda</p>
+        <p className="text-black font-normal sm:text-xl ">Se realizaron trabajos de obra en el hogar, en techo y piso.</p>
       </div>
-      <div className="px-10">
-        <p className="text-purple font-semibold text-4xl mb-8 mt-16">Testimonio</p>
-        <p className="text-black font-normal text-xl text-center">
+      <div className="md:px-10">
+        <p className="text-purple font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl md:mb-8 lg:mt-16 md:mt-12 sm:mt-8 xs:mt-6">Testimonio</p>
+        <p className="text-black font-normal md:text-xl xs:text-xs md:text-center">
           &quot;Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
           se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
           la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />
@@ -426,16 +426,16 @@ export const stories = [
     supportDetails: (
     <>
       <div className="mb-4">
-        <p className="text-pink font-semibold text-4xl mb-2">Solicitud</p>
-        <p className="text-black font-normal text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
+        <p className="text-pink font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl mb-2">Solicitud</p>
+        <p className="text-black font-normal sm:text-xl ">Obtener apoyo para la cirugía para la remover los lipomas</p>
       </div>
       <div className="mb-4">
-        <p className="text-pink font-semibold text-4xl mb-2">Cotización Quirurjica</p>
-        <p className="text-black font-normal text-xl ">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
+        <p className="text-pink font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl mb-2">Cotización Quirurjica</p>
+        <p className="text-black font-normal sm:text-xl">La cotización quedo a cargo de la Medica Ginecoobstreticia</p>
       </div>
-      <div className="px-10">
-        <p className="text-pink font-semibold text-4xl mb-8 mt-16">Testimonio</p>
-        <p className="text-black font-normal text-xl text-center">
+      <div className="md:px-10">
+        <p className="text-pink font-semibold lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl md:mb-8 lg:mt-16 md:mt-12 sm:mt-8 xs:mt-6">Testimonio</p>
+        <p className="text-black font-normal md:text-xl xs:text-xs md:text-center">
           &quot;Antes, cuando llovía, teníamos que poner cubetas por todo el cuarto. El techo<br />
           se estaba cayendo, y el piso era pura tierra. Mis hijos se enfermaban seguido por<br />
           la humedad. Ahora gracias al apoyo de la fundación, tenemos un techo seguro <br />

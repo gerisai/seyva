@@ -1,9 +1,23 @@
 export default function SimpleQuote({ quote, author, colorClass }) {
   return (
     <div className="flex flex-col justify-center items-center py-10">
-      <div className="max-w-5xl px-6 relative">
-        <p className={`text-5xl ${colorClass}`}>{quote}</p>
-        <span className="text-5xl text-lightgray-simple  mt-2 block text-right">{author}</span>
+      <div className="md:w-3/4 xs:w-full relative">
+        <p className={`${colorClass}
+          lg:text-5xl
+          md:text-4xl
+          sm:text-3xl
+          xs:text-2xl
+        `}>
+            {quote}
+        </p>
+        <span className="text-lightgray-simple mt-2 block text-right
+          lg:text-5xl
+          md:text-4xl
+          sm:text-3xl
+          xs:text-2xl
+        ">
+          {author}
+        </span>
       </div>
     </div>
   );

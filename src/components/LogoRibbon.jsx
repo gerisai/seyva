@@ -15,7 +15,7 @@ export default function LogoRibbon() {
           <div className={`h-6 bg-${block.color} mb-4`}/>
           <div className="animate-showfrombutton">
             <Image
-              className="pt-6 px-8 mx-auto"
+              className="xs:pt-2 md:pt-6 xs:px-4 md:px-8 mx-auto"
               src={block.image}
               alt={block.name}
               width={220}

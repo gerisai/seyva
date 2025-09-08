@@ -10,16 +10,15 @@ export const metadata = {
   title: "Conócenos"
 };
 
-
 export default function Home() {
   return (
     <main className="bg-gray text-black">
       <div className="flex flex-col gap-16 items-center py-16">
         <Image alt='seyva-logo'src='/vertical-imagotipo.svg' width={250} height={250} />
-        <h1 className="text-3xl text-center">
+        <h1 className="xs:text-2xl sm:text-3xl text-center">
           Este es el comienzo de un legado que cambiara vidas
         </h1>
-        <h1 className="text-5xl font-bold text-gray xs:text-center">¿Que abarca la Fundación SEYVA?</h1>
+        <h1 className="xs:text-4xl sm:text-5xl font-bold text-gray xs:text-center">¿Que abarca la Fundación SEYVA?</h1>
         <div className="flex flex-col w-3/4 gap-12">
         { horizontalCards.map((card,index) => (
           <HorizontalCard key={index} {...card}/>
