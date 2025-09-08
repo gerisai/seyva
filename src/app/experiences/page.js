@@ -1,4 +1,3 @@
-"use client";
 import CardCarousel from "@/components/CardCarousel";
 import { jumboSlides} from "@/util/constants";
 import PublicFileCard from "@/components/PublicFileCard";
@@ -7,6 +6,10 @@ import { publicFileCards } from '@/util/constants';
 import HorizontalScrollable from "@/components/HorizontalScrollable";
 import Quote from '@/components/Quote';
 import { programs, quotes } from "@/util/constants"; 
+
+export const metadata = {
+  title: "Experiencias"
+};
 
 export default function Home() {
 

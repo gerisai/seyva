@@ -1,9 +1,12 @@
-"use client"
-
 import Image from "next/image"
 import ProgramCard from "@/components/ProgramCard"
 import HorizontalScrollable from "@/components/HorizontalScrollable"
 import { baseAssetsUrl, programs } from "@/util/constants"
+
+export const metadata = {
+  title: "Programas"
+};
+
 
 export default function Home() {
   return (

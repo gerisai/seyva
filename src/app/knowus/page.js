@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image"
 import HorizontalCard from "@/components/HorizontalCard"
 import Paragraph from "@/components/Paragraph"
@@ -7,6 +5,11 @@ import Quote from "@/components/Quote"
 import ProgramCard from "@/components/ProgramCard"
 import HorizontalScrollable from "@/components/HorizontalScrollable"
 import { horizontalCards, programs, quotes } from "@/util/constants"
+
+export const metadata = {
+  title: "Conócenos"
+};
+
 
 export default function Home() {
   return (

@@ -19,7 +19,10 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Fundación SEyVA",
+  title: {
+    default: "Fundación SEyVA",
+    template: "%s | Fundación SEyVA"
+  },
   description: "Salud | Educación | Vivienda | Alimentación",
 };
 
