@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function ContactForm({ fields }) {
   return (
-    <div className="bg-white rounded-4xl shadow-lg md:w-3/4 bg-gray">
+    <div className="rounded-4xl shadow-lg md:w-3/4 bg-gray">
       <div className="bg-blue text-white text-center py-4 rounded-t-4xl font-bold
         md:text-5xl
         xs:text-4xl

@@ -8,12 +8,12 @@ export default function DonationForm({ fields }) {
   const [currentAmount,setCurrentAmount] = useState('$20');
   
   return (
-    <div className="bg-white rounded-4xl shadow-lg w-3/4 bg-gray">
+    <div className="rounded-4xl shadow-lg bg-gray xs:w-9/10 lg:w-1/2 md:w-3/4">
       <div className="bg-blue text-white text-center py-8 text-5xl rounded-t-4xl font-bold"/>
       <div className="px-8 pb-8 pt-4">
         <div className="flex flex-col justify-center my-6 gap-6">
-          <h1 className="font-bold text-gray text-5xl text-center">¡Realiza tu donativo aquí!</h1>
-          <p className="text-xl text-justify">
+          <h1 className="font-bold text-gray xs:text-4xl md:text-5xl text-center">¡Realiza tu donativo aquí!</h1>
+          <p className="hidden md:block text-xl text-justify">
             Tu apoyo es fundamental para que podamos seguir cumpliendo nuestra misión.
             Cada donación, por pequeña que sea, nos ayuda a transformar vidas y a continuar con nuestros proyectos.
             Contamos con diferentes formas de donar, todas seguras y confiables, para que elijas la que mejor se adapte a ti.
@@ -25,10 +25,10 @@ export default function DonationForm({ fields }) {
           </p>
         </div>
         <div className="flex flex-col gap-6">
-          <p className="font-bold text-gray text-xl">
+          <p className="font-bold text-gray text-xl xs:text-center sm:text-start">
             Elige la cantidad deseada a donar
           </p>
-          <div className="flex">
+          <div className="xs:flex sm:flex-row xs:flex-col xs:gap-6 sm:gap-4">
             { predefinedDonationAmounts.map((amount,index) => (
               <Button key={index}
                 additionalClasses={`
@@ -53,7 +53,7 @@ export default function DonationForm({ fields }) {
               </Button>
             ))}
           </div>
-          <p className="font-bold text-gray text-xl">
+          <p className="font-bold text-gray text-xl xs:text-center sm:text-start">
             Proporciona los siguientes datos
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function DonationForm({ fields }) {
                 />
             </div>
           ))}
-          <p className="text-lg font-semibold italic mt-6 mb-12">
+          <p className="sm:text-lg font-semibold italic mt-6 mb-12">
             El Nombre, RFC y Código postal debe coincidir con la dirección fiscal del receptor
           </p>
           {/* Privacy Notice */}
@@ -79,9 +79,9 @@ export default function DonationForm({ fields }) {
             <input
               id="privacy"
               type="checkbox"
-              className="h-4 w-4 mt-[8px] text-blue font-bold border-gray-300 rounded focus:ring-brand-blue"
+              className="h-4 w-4 sm:mt-[6px] xs:mt-[2px] text-blue font-bold border-gray-300 rounded focus:ring-brand-blue"
             />
-            <label htmlFor="privacy" className="ml-2 text-lg">
+            <label htmlFor="privacy" className="ml-2 sm:text-lg">
               Autorizo a la Fundación SEYVA el tratamiento de mis datos 
               personales financieros para fines de la presente donación.
             </label>
@@ -93,8 +93,8 @@ export default function DonationForm({ fields }) {
                 primary-button mt-6
                 border-3 transition-colors
                 font-bold
-                duration-900 ease-in-out !text-3xl
-                !py-2 w-1/3
+                duration-900 ease-in-out sm:text-3xl
+                !py-2 sm:w-1/3
               "
               type="submit"
             >
