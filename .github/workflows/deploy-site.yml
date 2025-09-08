@@ -36,4 +36,4 @@ jobs:
       - name: Push changed static files to S3 bucket
         id: s3-push
         run: |
-          aws s3 sync dist s3://seyva-static-site --size-only
+          aws s3 sync dist s3://seyva-static-site
