@@ -80,7 +80,7 @@ export default function ImageCarousel({ slides, intervalTime = 3000 }) {
       {/* Left */}
       <button
         onClick={prevSlide}
-        className="absolute left-0 md:px-8 h-full top-1/2 -translate-y-1/2 transition-shadow duration-300 ease-in-out hover:shadow-[inset_1em_0_1em_0em_rgba(255,255,255,0.1)] text-white z-1"
+        className="xs:opacity-0 sm:opacity-100 absolute left-0 md:px-8 h-full top-1/2 -translate-y-1/2 transition-shadow duration-300 ease-in-out hover:shadow-[inset_1em_0_1em_0em_rgba(255,255,255,0.1)] text-white z-1"
       >
         <ChevronLeft size={48} />
       </button>
@@ -88,7 +88,7 @@ export default function ImageCarousel({ slides, intervalTime = 3000 }) {
       {/* Right */}
       <button
         onClick={nextSlide}
-        className="absolute right-0 md:px-8 h-full top-1/2 -translate-y-1/2 transition-shadow duration-300 ease-in-out hover:shadow-[inset_-1em_0_1em_0em_rgba(255,255,255,0.1)] text-white z-1"
+        className="xs:opacity-0 sm:opacity-100 absolute right-0 md:px-8 h-full top-1/2 -translate-y-1/2 transition-shadow duration-300 ease-in-out hover:shadow-[inset_-1em_0_1em_0em_rgba(255,255,255,0.1)] text-white z-1"
       >
         <ChevronRight size={48} />
       </button>

@@ -12,6 +12,7 @@ export default function ProgramCard({
   lineClasses,
   buttonClasses,
   buttonClick,
+  inline = true
 }) {
   return (
     <div className="flex-shrink-0 overflow-hidden rounded-2xl
@@ -38,11 +39,11 @@ export default function ProgramCard({
         />
       </div>
       <div className="py-5 text-left">
-        <div className="
+        <div className={inline ? `
           lg:h-36
           md:h-40
           xs:h-40
-        ">
+        ` : ''}>
           <h2 className="font-semibold text-black
             lg:text-3xl
             md:text-2xl

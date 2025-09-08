@@ -14,7 +14,7 @@ export default function HorizontalCard({
         reverseLayout ? 'flex-row-reverse' : 'flex-row'
       } items-center overflow-hidden gap-8`}
     >
-      <div className="flex-1 px-7 xs:text-center md:text-start">
+      <div className="flex-1 md:px-7 xs:text-center md:text-start">
         <h2 className={`text-4xl font-bold ${colorClass}`}>
           {title}
         </h2>

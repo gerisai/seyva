@@ -25,7 +25,7 @@ export default function HorizontalScrollable ({ children, classes }) {
     ">
       <button
         onClick={() => scroll("left")}
-        className="absolute md:left-6 xs:left-0 top-1/2 -translate-y-1/2 z-10 p-2 hover:scale-130 transition"
+        className="absolute hidden sm:block sm:left-0 md:left-6 top-1/2 -translate-y-1/2 z-10 p-2 hover:scale-130 transition"
       >
         <ChevronLeft className="w-12 h-12 text-gray-400" />
       </button>
@@ -46,7 +46,7 @@ export default function HorizontalScrollable ({ children, classes }) {
 
       <button
         onClick={() => scroll("right")}
-        className="absolute md:right-6 xs:right-0 top-1/2 -translate-y-1/2 z-10 rounded-full p-2 hover:scale-130 transition"
+        className="absolute hidden sm:block xs:right-0 md:right-6 top-1/2 -translate-y-1/2 z-10 rounded-full p-2 hover:scale-130 transition"
       >
         <ChevronRight className="w-12 h-12 text-gray-400" />
       </button>

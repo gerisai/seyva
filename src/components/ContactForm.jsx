@@ -100,7 +100,7 @@ export default function ContactForm({ fields }) {
                 border-3 transition-colors
                 font-bold
                 duration-900 ease-in-out sm:text-3xl
-                !py-2 w-1/3
+                !py-2 w-fit
               "
               type="submit"
             >

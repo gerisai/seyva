@@ -46,8 +46,9 @@ export default function CardCarousel({ slides }) {
             xl:h-160 xl:w-3xl
             lg:h-140 lg:w-2xl
             md:h-120 md:w-xl
-            sm:h-100 sm:w-sm
-            xs:h-80 xs:w-xs
+            sm:h-100 sm:w-sm sm:block
+            xs:h-80 xs:w-2xs
+            ${ index === activeIndex ? '' : 'hidden' }
             ${ index === activeIndex ? '' : slide.cardClasses }
             `
           }
