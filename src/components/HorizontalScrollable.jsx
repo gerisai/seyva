@@ -17,12 +17,13 @@ export default function HorizontalScrollable ({ children, classes }) {
   };
 
   return (
-    <div className="w-full relative flex justify-center 
+    <div className={`w-full relative flex justify-center 
       2xl:py-12
       xl:py-12
       lg:py-10
       xs:py-8
-    ">
+      ${classes}
+    `}>
       <button
         onClick={() => scroll("left")}
         className="absolute hidden sm:block sm:left-0 md:left-6 top-1/2 -translate-y-1/2 z-10 p-2 hover:scale-130 transition"

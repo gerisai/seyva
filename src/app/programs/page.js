@@ -68,7 +68,12 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center">
+      <HorizontalScrollable classes="hidden md:flex">
+          { programs.map((program,index) => (
+            <ProgramCard key={index} {...program} />
+          ))}
+      </HorizontalScrollable>
+      <div className="md:hidden flex flex-col items-center">
       { programs.map((program,index) => (
         <ProgramCard key={index} {...program} inline={false} />
       ))}
