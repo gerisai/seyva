@@ -63,3 +63,16 @@ resource "aws_route53_record" "mail_records" {
   ttl      = each.value.ttl
   records  = each.value.records
 }
+
+resource "aws_route53_record" "docs" {
+  zone_id = aws_route53_zone.primary.zone_id
+  name    = "docs"
+  type    = "A"
+  ttl     = 5
+  records = [
+    "185.199.108.153",
+    "185.199.109.153",
+    "185.199.110.153",
+    "185.199.111.153"
+  ]
+}

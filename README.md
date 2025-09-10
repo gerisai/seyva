@@ -88,7 +88,16 @@ The infra folder contains AWS resource definitions:
 Deployment is done via static export and can be hosted on AWS S3 + CloudFront, according to the Terraform configuration.
 
 ---
+## 8. Docs
+For local development install docsify
+```bash
+npm i docsify-cli -g
+```
 
-## 8. References
+Then run a the local server
+```bash
+docsify init ./docs
+```
 
-Check the mentioned files and
+---
+## 9. References
