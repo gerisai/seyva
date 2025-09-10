@@ -96,7 +96,7 @@ npm i docsify-cli -g
 
 Then run a the local server
 ```bash
-docsify init ./docs
+docsify serve docs
 ```
 
 ---

@@ -1,0 +1,12 @@
+# Referencias
+- [AWS](https://aws.amazon.com/es/)
+- [Tailwind](https://tailwindcss.com/)
+- [Terraform](https://developer.hashicorp.com/terraform)
+- [Storybook](https://storybook.js.org/)
+- [GitHub Actions](https://github.com/features/actions?locale=es-419)
+- [GitHub Pages](https://docs.github.com/en/pages)
+- [Docsify](https://docsify.js.org/#/)
+- [Configuración de Tailwind](https://v2.tailwindcss.com/docs/configuration)
+- [Configuración de Next.js](https://nextjs.org/docs/app/api-reference/config/next-config-js)
+- [Configuración de Storybook](https://storybook.js.org/docs/configure)
+- [Instalación de Terraform](https://developer.hashicorp.com/terraform/install)
