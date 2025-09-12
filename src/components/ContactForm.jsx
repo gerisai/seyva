@@ -74,7 +74,7 @@ export default function ContactForm({ fields }) {
             <label htmlFor="privacy" className="ml-2 sm:text-2xl">
               He leído y acepto el{" "}
               <a
-                href="#" // TODO: change for actual privacy notice link
+                href="/aviso_privacidad.pdf"
                 className="text-blue underline required-label"
               >
                 aviso de privacidad
