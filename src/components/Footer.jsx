@@ -47,7 +47,7 @@ export default function Footer () {
             Este sitio web utiliza cookies para mejorar su experiencia. Si continúa navegando se entenderá que otorgó su consentimiento para el uso de dichas cookies, si desea obtener más información consulte nuestro{' '}
           </p>
           <a
-            href="" // TODO: href to privacy notice
+            href="/aviso_privacidad.pdf"
             className="underline"
           >
               Aviso de Privacidad.
